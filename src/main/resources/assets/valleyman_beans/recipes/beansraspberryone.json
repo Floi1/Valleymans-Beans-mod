@@ -1,0 +1,26 @@
+{
+  "group": "valleyman_beans",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:water_bucket"
+    },
+    "1": {
+      "item": "minecraft:wool",
+      "data": 3
+    },
+    "2": {
+      "item": "minecraft:dirt",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeansraspberry",
+    "count": 4
+  }
+}

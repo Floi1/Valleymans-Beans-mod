@@ -1,0 +1,29 @@
+{
+  "group": "valleyman_beans",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:wool",
+      "data": 32767
+    },
+    {
+      "item": "minecraft:fish",
+      "data": 0
+    },
+    {
+      "item": "minecraft:wool",
+      "data": 32767
+    },
+    {
+      "item": "minecraft:dirt",
+      "data": 32767
+    }
+  ],
+  "result": {
+    "item": "valleyman_beans:valleymansbeansdreamfish",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "group": "valleyman_beans",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:red_flower",
+      "data": 32767
+    },
+    {
+      "item": "minecraft:dirt",
+      "data": 32767
+    }
+  ],
+  "result": {
+    "item": "valleyman_beans:valleymansbeans_st_patricks_day",
+    "count": 1
+  }
+}

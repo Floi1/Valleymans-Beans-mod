@@ -1,0 +1,29 @@
+{
+  "group": "valleyman_beans",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 3
+    },
+    {
+      "item": "minecraft:fish",
+      "data": 0
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 3
+    },
+    {
+      "item": "minecraft:dirt",
+      "data": 32767
+    }
+  ],
+  "result": {
+    "item": "valleyman_beans:valleymansbeans_seafoodpizzaandchocomilk",
+    "count": 1
+  }
+}

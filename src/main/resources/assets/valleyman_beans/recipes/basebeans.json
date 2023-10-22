@@ -1,0 +1,21 @@
+{
+  "group": "valleyman_beans",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:dye",
+      "data": 3
+    },
+    {
+      "item": "minecraft:dirt",
+      "data": 32767
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "item": "valleyman_beans:beanswip",
+    "count": 1
+  }
+}
