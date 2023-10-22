@@ -13,10 +13,10 @@ import net.minecraft.item.ItemFood;
 import net.minecraft.item.Item;
 import net.minecraft.item.EnumAction;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.valleymanbeans.procedure.ProcedureValleymansbeansSeafoodpizzaandchocomilkFoodEaten;
+import net.mcreator.valleymanbeans.creativetab.TabBeans;
 import net.mcreator.valleymanbeans.ElementsValleymanBeansMod;
 
 import java.util.Map;
@@ -46,7 +46,7 @@ public class ItemValleymansbeansSeafoodpizzaandchocomilk extends ElementsValleym
 			super(10, 10f, false);
 			setUnlocalizedName("valleymansbeans_seafoodpizzaandchocomilk");
 			setRegistryName("valleymansbeans_seafoodpizzaandchocomilk");
-			setCreativeTab(CreativeTabs.FOOD);
+			setCreativeTab(TabBeans.tab);
 			setMaxStackSize(64);
 		}
 

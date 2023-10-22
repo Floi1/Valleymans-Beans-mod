@@ -13,10 +13,10 @@ import net.minecraft.item.ItemFood;
 import net.minecraft.item.Item;
 import net.minecraft.item.EnumAction;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.valleymanbeans.procedure.ProcedureValleymansbeansAustraliadefinitiveeditionFoodEaten;
+import net.mcreator.valleymanbeans.creativetab.TabBeans;
 import net.mcreator.valleymanbeans.ElementsValleymanBeansMod;
 
 import java.util.Map;
@@ -47,7 +47,7 @@ public class ItemValleymansbeansAustraliadefinitiveedition extends ElementsValle
 			setUnlocalizedName("valleymansbeans_australiadefinitiveedition");
 			setRegistryName("valleymansbeans_australiadefinitiveedition");
 			setAlwaysEdible();
-			setCreativeTab(CreativeTabs.FOOD);
+			setCreativeTab(TabBeans.tab);
 			setMaxStackSize(64);
 		}
 
