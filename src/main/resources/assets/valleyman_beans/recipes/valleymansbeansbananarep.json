@@ -1,0 +1,34 @@
+{
+  "group": "valleyman_beans",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    " 4 ",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:water_bucket"
+    },
+    "4": {
+      "item": "minecraft:yellow_flower",
+      "data": 32767
+    },
+    "6": {
+      "item": "minecraft:double_plant",
+      "data": 0
+    },
+    "7": {
+      "item": "minecraft:dirt",
+      "data": 32767
+    },
+    "8": {
+      "item": "minecraft:double_plant",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeansbanana",
+    "count": 1
+  }
+}

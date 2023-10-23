@@ -46,6 +46,7 @@ public class ItemValleymansbeansSeafoodpizzaandchocomilk extends ElementsValleym
 			super(10, 10f, false);
 			setUnlocalizedName("valleymansbeans_seafoodpizzaandchocomilk");
 			setRegistryName("valleymansbeans_seafoodpizzaandchocomilk");
+			setAlwaysEdible();
 			setCreativeTab(TabBeans.tab);
 			setMaxStackSize(64);
 		}

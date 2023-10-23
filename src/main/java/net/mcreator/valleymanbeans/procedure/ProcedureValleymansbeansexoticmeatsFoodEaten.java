@@ -27,5 +27,11 @@ public class ProcedureValleymansbeansexoticmeatsFoodEaten extends ElementsValley
 			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.POISON, (int) 320, (int) 100));
 		if (entity instanceof EntityLivingBase)
 			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, (int) 620, (int) 100));
+		if (entity instanceof EntityLivingBase)
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.NAUSEA, (int) 620, (int) 100));
+		if (entity instanceof EntityLivingBase)
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, (int) 620, (int) 100));
+		if (entity instanceof EntityLivingBase)
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.MINING_FATIGUE, (int) 310, (int) 100));
 	}
 }
