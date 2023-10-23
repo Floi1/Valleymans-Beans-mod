@@ -22,8 +22,10 @@ public class ProcedureValleymansbeansappleandtangerineFoodEaten extends Elements
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.HEALTH_BOOST, (int) 12000, (int) 66, (false), (false)));
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.HEALTH_BOOST, (int) 6000, (int) 66, (false), (false)));
 		if (entity instanceof EntityLivingBase)
 			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.HUNGER, (int) 600, (int) 255, (false), (false)));
+		if (entity instanceof EntityLivingBase)
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.GLOWING, (int) 3000, (int) 255, (false), (false)));
 	}
 }

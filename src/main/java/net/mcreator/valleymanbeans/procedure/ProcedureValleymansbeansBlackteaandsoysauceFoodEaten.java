@@ -27,5 +27,9 @@ public class ProcedureValleymansbeansBlackteaandsoysauceFoodEaten extends Elemen
 			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.POISON, (int) 60, (int) 111, (false), (false)));
 		if (entity instanceof EntityLivingBase)
 			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.HUNGER, (int) 60, (int) 111, (false), (false)));
+		if (entity instanceof EntityLivingBase)
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.INSTANT_HEALTH, (int) 60, (int) 111, (false), (false)));
+		if (entity instanceof EntityLivingBase)
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.LEVITATION, (int) 60, (int) 111, (false), (false)));
 	}
 }
