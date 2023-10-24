@@ -37,5 +37,7 @@ public class ProcedureValleymansbeanspremiumhohoholidayspecialFoodEaten extends 
 			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, (int) 3000, (int) 11));
 		if (entity instanceof EntityLivingBase)
 			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, (int) 3000, (int) 11));
+		if (entity instanceof EntityLivingBase)
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.SATURATION, (int) 3000, (int) 11));
 	}
 }

@@ -10,6 +10,7 @@ import net.minecraft.init.MobEffects;
 import net.minecraft.init.Items;
 import net.minecraft.init.Blocks;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.passive.EntityLlama;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
 
@@ -59,5 +60,14 @@ public class ProcedureValleymansbeanscherryFoodEaten extends ElementsValleymanBe
 		if (entity instanceof EntityLivingBase)
 			((EntityLivingBase) entity).setHealth((float) 20);
 		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.WOOL.getStateFromMeta(10), 3);
+		for (int index0 = 0; index0 < (int) (10); index0++) {
+			if (!world.isRemote) {
+				Entity entityToSpawn = new EntityLlama(world);
+				if (entityToSpawn != null) {
+					entityToSpawn.setLocationAndAngles(x, y, z, world.rand.nextFloat() * 360F, 0.0F);
+					world.spawnEntity(entityToSpawn);
+				}
+			}
+		}
 	}
 }
