@@ -43,7 +43,7 @@ public class ItemValleymansbeansAustraliadefinitiveedition extends ElementsValle
 	}
 	public static class ItemFoodCustom extends ItemFood {
 		public ItemFoodCustom() {
-			super(10, 1f, true);
+			super(10, 1f, false);
 			setUnlocalizedName("valleymansbeans_australiadefinitiveedition");
 			setRegistryName("valleymansbeans_australiadefinitiveedition");
 			setAlwaysEdible();

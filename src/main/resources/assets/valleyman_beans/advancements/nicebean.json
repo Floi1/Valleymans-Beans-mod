@@ -1,0 +1,31 @@
+{
+  "display": {
+    "background": "minecraft:textures/blocks/stone.png",
+    "icon": {
+      "item": "valleyman_beans:valleymansbeanssmartiiesandskeettles"
+    },
+    "title": {
+      "translate": "advancements.nicebean.title"
+    },
+    "description": {
+      "translate": "advancements.nicebean.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nicebean": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "valleyman_beans:valleymansbeanssmartiiesandskeettles"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1777
+  }
+}

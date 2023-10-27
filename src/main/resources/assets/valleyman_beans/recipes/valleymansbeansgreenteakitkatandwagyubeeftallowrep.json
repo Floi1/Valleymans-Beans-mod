@@ -1,0 +1,36 @@
+{
+  "group": "valleyman_beans",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:water_bucket"
+    },
+    "3": {
+      "item": "minecraft:beef"
+    },
+    "4": {
+      "item": "minecraft:coal",
+      "data": 0
+    },
+    "5": {
+      "item": "minecraft:beef"
+    },
+    "6": {
+      "item": "minecraft:double_plant",
+      "data": 0
+    },
+    "7": {
+      "item": "minecraft:dirt",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeansgreenteakitkatandwagyubeeftallow",
+    "count": 1
+  }
+}
