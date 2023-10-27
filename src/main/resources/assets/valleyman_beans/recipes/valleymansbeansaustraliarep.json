@@ -8,19 +8,19 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:dirt",
-      "data": 32767
+      "item": "minecraft:water_bucket"
     },
     "1": {
       "item": "minecraft:sand",
       "data": 32767
     },
     "2": {
-      "item": "minecraft:water_bucket"
+      "item": "minecraft:dirt",
+      "data": 32767
     }
   },
   "result": {
-    "item": "valleyman_beans:valleymansbeans_australiadefinitiveedition",
+    "item": "valleyman_beans:valleymansbeansaustralia",
     "count": 1
   }
 }

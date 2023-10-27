@@ -1,0 +1,33 @@
+{
+  "group": "valleyman_beans",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:water_bucket"
+    },
+    "3": {
+      "item": "minecraft:dye",
+      "data": 3
+    },
+    "4": {
+      "item": "minecraft:emerald_block"
+    },
+    "5": {
+      "item": "minecraft:dye",
+      "data": 3
+    },
+    "7": {
+      "item": "minecraft:dirt",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeansavocadoandchocolatechips",
+    "count": 1
+  }
+}

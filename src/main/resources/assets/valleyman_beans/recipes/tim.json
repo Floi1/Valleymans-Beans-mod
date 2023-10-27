@@ -2,9 +2,8 @@
   "group": "valleyman_beans",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0",
-    "1",
-    "2"
+    "01",
+    "23"
   ],
   "key": {
     "0": {
@@ -12,15 +11,18 @@
       "data": 32767
     },
     "1": {
-      "item": "minecraft:sand",
-      "data": 32767
+      "item": "minecraft:iron_ingot"
     },
     "2": {
-      "item": "minecraft:water_bucket"
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "minecraft:dirt",
+      "data": 32767
     }
   },
   "result": {
-    "item": "valleyman_beans:valleymansbeans_australiadefinitiveedition",
-    "count": 1
+    "item": "minecraft:iron_ingot",
+    "count": 64
   }
 }

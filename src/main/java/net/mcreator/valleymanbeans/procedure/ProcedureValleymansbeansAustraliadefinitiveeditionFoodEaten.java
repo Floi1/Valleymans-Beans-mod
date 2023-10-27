@@ -22,6 +22,6 @@ public class ProcedureValleymansbeansAustraliadefinitiveeditionFoodEaten extends
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.LEVITATION, (int) 600, (int) 1, (false), (false)));
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.LEVITATION, (int) 600, (int) 7, (false), (false)));
 	}
 }
