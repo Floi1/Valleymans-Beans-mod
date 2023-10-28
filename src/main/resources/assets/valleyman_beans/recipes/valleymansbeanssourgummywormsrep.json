@@ -1,0 +1,39 @@
+{
+  "group": "valleyman_beans",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:water_bucket"
+    },
+    "3": {
+      "item": "minecraft:double_plant",
+      "data": 0
+    },
+    "4": {
+      "item": "minecraft:wool",
+      "data": 0
+    },
+    "5": {
+      "item": "minecraft:ice"
+    },
+    "6": {
+      "item": "minecraft:redstone_block"
+    },
+    "7": {
+      "item": "minecraft:dirt",
+      "data": 32767
+    },
+    "8": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeanssourgummyworms",
+    "count": 1
+  }
+}

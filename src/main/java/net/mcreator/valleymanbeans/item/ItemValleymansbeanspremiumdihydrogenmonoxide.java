@@ -43,7 +43,7 @@ public class ItemValleymansbeanspremiumdihydrogenmonoxide extends ElementsValley
 	}
 	public static class ItemFoodCustom extends ItemFood {
 		public ItemFoodCustom() {
-			super(-20, -20f, true);
+			super(-20, -20f, false);
 			setUnlocalizedName("valleymansbeanspremiumdihydrogenmonoxide");
 			setRegistryName("valleymansbeanspremiumdihydrogenmonoxide");
 			setAlwaysEdible();
