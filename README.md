@@ -2,7 +2,7 @@
 [**Valleyman's beans**](https://www.curseforge.com/minecraft/mc-mods/valleymans-beans)
 
 
-adds valleyman beans meme from prehistoric nature discord server to a food mod. there are 33 different types of Valleyman's beans..
+adds valleyman beans meme from prehistoric nature discord server to a food mod. there are 37 different types of Valleyman's beans..
 
 
 Valleyman's beans taste bad you will get many bad  effects if you eat it.
