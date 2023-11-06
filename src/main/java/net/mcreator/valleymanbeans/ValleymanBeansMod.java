@@ -45,7 +45,7 @@ import java.util.function.Supplier;
 @Mod(modid = ValleymanBeansMod.MODID, version = ValleymanBeansMod.VERSION)
 public class ValleymanBeansMod {
 	public static final String MODID = "valleyman_beans";
-	public static final String VERSION = "1.7.0";
+	public static final String VERSION = "1.8.0";
 	public static final SimpleNetworkWrapper PACKET_HANDLER = NetworkRegistry.INSTANCE.newSimpleChannel("valleyman_beans:a");
 	@SidedProxy(clientSide = "net.mcreator.valleymanbeans.ClientProxyValleymanBeansMod", serverSide = "net.mcreator.valleymanbeans.ServerProxyValleymanBeansMod")
 	public static IProxyValleymanBeansMod proxy;
