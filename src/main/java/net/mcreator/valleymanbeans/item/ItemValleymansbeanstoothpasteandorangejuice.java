@@ -15,7 +15,7 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
-import net.mcreator.valleymanbeans.procedure.ProcedureValleymansbeanscottoncandyFoodEaten;
+import net.mcreator.valleymanbeans.procedure.ProcedureValleymansbeanstoothpasteandorangejuiceFoodEaten;
 import net.mcreator.valleymanbeans.creativetab.TabBeans;
 import net.mcreator.valleymanbeans.ElementsValleymanBeansMod;
 
@@ -23,11 +23,11 @@ import java.util.Map;
 import java.util.HashMap;
 
 @ElementsValleymanBeansMod.ModElement.Tag
-public class ItemValleymansbeanscottoncandy extends ElementsValleymanBeansMod.ModElement {
-	@GameRegistry.ObjectHolder("valleyman_beans:valleymansbeanscottoncandy")
+public class ItemValleymansbeanstoothpasteandorangejuice extends ElementsValleymanBeansMod.ModElement {
+	@GameRegistry.ObjectHolder("valleyman_beans:valleymansbeanstoothpasteandorangejuice")
 	public static final Item block = null;
-	public ItemValleymansbeanscottoncandy(ElementsValleymanBeansMod instance) {
-		super(instance, 87);
+	public ItemValleymansbeanstoothpasteandorangejuice(ElementsValleymanBeansMod instance) {
+		super(instance, 96);
 	}
 
 	@Override
@@ -38,13 +38,14 @@ public class ItemValleymansbeanscottoncandy extends ElementsValleymanBeansMod.Mo
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("valleyman_beans:valleymansbeanscottoncandy", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0,
+				new ModelResourceLocation("valleyman_beans:valleymansbeanstoothpasteandorangejuice", "inventory"));
 	}
 	public static class ItemFoodCustom extends ItemFood {
 		public ItemFoodCustom() {
-			super(20, 10f, false);
-			setUnlocalizedName("valleymansbeanscottoncandy");
-			setRegistryName("valleymansbeanscottoncandy");
+			super(4, 0.3f, false);
+			setUnlocalizedName("valleymansbeanstoothpasteandorangejuice");
+			setRegistryName("valleymansbeanstoothpasteandorangejuice");
 			setAlwaysEdible();
 			setCreativeTab(TabBeans.tab);
 			setMaxStackSize(64);
@@ -68,7 +69,7 @@ public class ItemValleymansbeanscottoncandy extends ElementsValleymanBeansMod.Mo
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureValleymansbeanscottoncandyFoodEaten.executeProcedure($_dependencies);
+				ProcedureValleymansbeanstoothpasteandorangejuiceFoodEaten.executeProcedure($_dependencies);
 			}
 		}
 	}
