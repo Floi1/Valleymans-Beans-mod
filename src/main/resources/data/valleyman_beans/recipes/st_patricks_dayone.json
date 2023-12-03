@@ -8,7 +8,7 @@
       "tag": "minecraft:small_flowers"
     },
     {
-      "tag": "minecraft:dirt"
+      "item": "minecraft:dirt"
     }
   ],
   "result": {

@@ -1,89 +1,70 @@
 
 package net.mcreator.valleymanbeans.item;
 
-import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.World;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.valleymanbeans.procedures.BeansswordRightClickedInAirProcedure;
-import net.mcreator.valleymanbeans.ValleymanBeansModElements;
+import net.mcreator.valleymanbeans.init.ValleymanBeansModItems;
 
-import java.util.stream.Stream;
-import java.util.Map;
 import java.util.List;
-import java.util.HashMap;
-import java.util.AbstractMap;
 
-@ValleymanBeansModElements.ModElement.Tag
-public class BeansTIswordItem extends ValleymanBeansModElements.ModElement {
-	@ObjectHolder("valleyman_beans:beans_t_isword")
-	public static final Item block = null;
-
-	public BeansTIswordItem(ValleymanBeansModElements instance) {
-		super(instance, 92);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new SwordItem(new IItemTier() {
-			public int getMaxUses() {
+public class BeansTIswordItem extends SwordItem {
+	public BeansTIswordItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 10000;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 20f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 62f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 4;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 30;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(BeanswipItem.block));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(ValleymanBeansModItems.BEANSWIP.get()));
 			}
-		}, 3, 1f, new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire()) {
-			@Override
-			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
-				super.addInformation(itemstack, world, list, flag);
-				list.add(new StringTextComponent("Sword"));
-			}
+		}, 3, 1f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
+	}
 
-			@Override
-			public void onCreated(ItemStack itemstack, World world, PlayerEntity entity) {
-				super.onCreated(itemstack, world, entity);
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
+		list.add(new TextComponent("Sword"));
+	}
 
-				BeansswordRightClickedInAirProcedure
-						.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity), new AbstractMap.SimpleEntry<>("itemstack", itemstack)).collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-			}
+	@Override
+	public void onCraftedBy(ItemStack itemstack, Level world, Player entity) {
+		super.onCraftedBy(itemstack, world, entity);
+		BeansswordRightClickedInAirProcedure.execute(entity, itemstack);
+	}
 
-			@Override
-			@OnlyIn(Dist.CLIENT)
-			public boolean hasEffect(ItemStack itemstack) {
-				return true;
-			}
-		}.setRegistryName("beans_t_isword"));
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
 	}
 }

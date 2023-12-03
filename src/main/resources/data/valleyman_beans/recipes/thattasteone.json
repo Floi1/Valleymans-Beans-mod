@@ -8,7 +8,7 @@
       "tag": "minecraft:wool"
     },
     {
-      "tag": "minecraft:dirt"
+      "item": "minecraft:dirt"
     }
   ],
   "result": {

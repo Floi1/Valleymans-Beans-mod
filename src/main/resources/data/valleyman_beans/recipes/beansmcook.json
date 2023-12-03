@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "valleyman_beans:valleymansbeanssmartiiesandskeettles"
   },
-  "result": {
-    "item": "minecraft:purple_shulker_box"
-  }
+  "result": "minecraft:purple_shulker_box"
 }

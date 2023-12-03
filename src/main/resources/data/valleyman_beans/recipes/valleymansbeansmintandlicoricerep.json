@@ -16,10 +16,10 @@
       "item": "minecraft:fern"
     },
     "5": {
-      "tag": "minecraft:leaves"
+      "item": "minecraft:oak_leaves"
     },
     "7": {
-      "tag": "minecraft:dirt"
+      "item": "minecraft:dirt"
     }
   },
   "result": {

@@ -1,149 +1,113 @@
 package net.mcreator.valleymanbeans.procedures;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.vector.Vector3d;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.entity.projectile.SnowballEntity;
-import net.minecraft.entity.effect.LightningBoltEntity;
-import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.valleymanbeans.ValleymanBeansMod;
-
-import java.util.Map;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.projectile.Snowball;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.BlockPos;
 
 public class ValleymansbeansCubancigarsmokedFoodEatenProcedure {
-
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency world for procedure ValleymansbeansCubancigarsmokedFoodEaten!");
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
 			return;
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = new Snowball(EntityType.SNOWBALL, _level);
+			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof Mob _mobToSpawn)
+				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+			world.addFreshEntity(entityToSpawn);
 		}
-		if (dependencies.get("x") == null) {
-			if (!dependencies.containsKey("x"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency x for procedure ValleymansbeansCubancigarsmokedFoodEaten!");
-			return;
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = new Snowball(EntityType.SNOWBALL, _level);
+			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof Mob _mobToSpawn)
+				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+			world.addFreshEntity(entityToSpawn);
 		}
-		if (dependencies.get("y") == null) {
-			if (!dependencies.containsKey("y"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency y for procedure ValleymansbeansCubancigarsmokedFoodEaten!");
-			return;
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = new Snowball(EntityType.SNOWBALL, _level);
+			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof Mob _mobToSpawn)
+				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+			world.addFreshEntity(entityToSpawn);
 		}
-		if (dependencies.get("z") == null) {
-			if (!dependencies.containsKey("z"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency z for procedure ValleymansbeansCubancigarsmokedFoodEaten!");
-			return;
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = new Snowball(EntityType.SNOWBALL, _level);
+			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof Mob _mobToSpawn)
+				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+			world.addFreshEntity(entityToSpawn);
 		}
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency entity for procedure ValleymansbeansCubancigarsmokedFoodEaten!");
-			return;
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = new Snowball(EntityType.SNOWBALL, _level);
+			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof Mob _mobToSpawn)
+				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+			world.addFreshEntity(entityToSpawn);
 		}
-		IWorld world = (IWorld) dependencies.get("world");
-		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
-		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
-		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		Entity entity = (Entity) dependencies.get("entity");
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new SnowballEntity(EntityType.SNOWBALL, (World) world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = new Snowball(EntityType.SNOWBALL, _level);
+			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof Mob _mobToSpawn)
+				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+			world.addFreshEntity(entityToSpawn);
 		}
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new SnowballEntity(EntityType.SNOWBALL, (World) world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = new Snowball(EntityType.SNOWBALL, _level);
+			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof Mob _mobToSpawn)
+				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+			world.addFreshEntity(entityToSpawn);
 		}
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new SnowballEntity(EntityType.SNOWBALL, (World) world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = new Snowball(EntityType.SNOWBALL, _level);
+			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof Mob _mobToSpawn)
+				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+			world.addFreshEntity(entityToSpawn);
 		}
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new SnowballEntity(EntityType.SNOWBALL, (World) world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = new Snowball(EntityType.SNOWBALL, _level);
+			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof Mob _mobToSpawn)
+				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+			world.addFreshEntity(entityToSpawn);
 		}
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new SnowballEntity(EntityType.SNOWBALL, (World) world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = new Snowball(EntityType.SNOWBALL, _level);
+			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof Mob _mobToSpawn)
+				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+			world.addFreshEntity(entityToSpawn);
 		}
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new SnowballEntity(EntityType.SNOWBALL, (World) world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = new Snowball(EntityType.SNOWBALL, _level);
+			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof Mob _mobToSpawn)
+				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+			world.addFreshEntity(entityToSpawn);
 		}
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new SnowballEntity(EntityType.SNOWBALL, (World) world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
-		}
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new SnowballEntity(EntityType.SNOWBALL, (World) world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
-		}
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new SnowballEntity(EntityType.SNOWBALL, (World) world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
-		}
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new SnowballEntity(EntityType.SNOWBALL, (World) world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
-		}
-		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new SnowballEntity(EntityType.SNOWBALL, (World) world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-			if (entityToSpawn instanceof MobEntity)
-				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-			world.addEntity(entityToSpawn);
-		}
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.BLINDNESS, (int) 600, (int) 1, (false), (false)));
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.POISON, (int) 600, (int) 4, (false), (false)));
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WITHER, (int) 600, (int) 3, (false), (false)));
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NAUSEA, (int) 600, (int) 3, (false), (false)));
-		if (world instanceof ServerWorld) {
-			LightningBoltEntity _ent = EntityType.LIGHTNING_BOLT.create((World) world);
-			_ent.moveForced(Vector3d.copyCenteredHorizontally(new BlockPos(x, y, z)));
-			_ent.setEffectOnly(true);
-			((World) world).addEntity(_ent);
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 600, 1, (false), (false)));
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 600, 4, (false), (false)));
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 600, 3, (false), (false)));
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 600, 3, (false), (false)));
+		if (world instanceof ServerLevel _level) {
+			LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+			entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+			entityToSpawn.setVisualOnly(true);
+			_level.addFreshEntity(entityToSpawn);
 		}
 	}
 }
