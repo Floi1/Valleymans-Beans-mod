@@ -1,11 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "ingredients": [
     {
       "item": "minecraft:cocoa_beans"
     },
     {
-      "item": "minecraft:dirt"
+      "tag": "minecraft:dirt"
     },
     {
       "item": "minecraft:water_bucket"

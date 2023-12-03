@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "valleyman_beans:blocks/untitled_design_-_2023-10-30t142521.294",
-    "particle": "valleyman_beans:blocks/untitled_design_-_2023-10-30t142521.294"
+    "all": "valleyman_beans:block/untitled_design_-_2023-10-30t142521.294",
+    "particle": "valleyman_beans:block/untitled_design_-_2023-10-30t142521.294"
   },
   "render_type": "solid"
 }

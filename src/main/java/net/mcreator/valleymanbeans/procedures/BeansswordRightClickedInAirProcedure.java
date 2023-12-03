@@ -13,7 +13,7 @@ public class BeansswordRightClickedInAirProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		(itemstack).enchant(Enchantments.SHARPNESS, 10);
+		itemstack.enchant(Enchantments.SHARPNESS, 10);
 		if (entity instanceof Player _player)
 			_player.giveExperiencePoints(16937);
 		if (entity instanceof Player _player) {
