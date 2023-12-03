@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "valleyman_beans:valleymansbeanspremiumhohoholidayspecial"
   },
-  "result": {
-    "item": "minecraft:elytra"
-  }
+  "result": "minecraft:elytra"
 }

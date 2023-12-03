@@ -2,79 +2,43 @@ package net.mcreator.valleymanbeans.procedures;
 
 import net.minecraftforge.items.ItemHandlerHelper;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.passive.horse.LlamaEntity;
-import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.Entity;
-import net.minecraft.block.Blocks;
-
-import net.mcreator.valleymanbeans.ValleymanBeansMod;
-
-import java.util.Map;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.animal.horse.Llama;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.BlockPos;
 
 public class ValleymansbeanscherryFoodEatenProcedure {
-
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency world for procedure ValleymansbeanscherryFoodEaten!");
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
 			return;
-		}
-		if (dependencies.get("x") == null) {
-			if (!dependencies.containsKey("x"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency x for procedure ValleymansbeanscherryFoodEaten!");
-			return;
-		}
-		if (dependencies.get("y") == null) {
-			if (!dependencies.containsKey("y"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency y for procedure ValleymansbeanscherryFoodEaten!");
-			return;
-		}
-		if (dependencies.get("z") == null) {
-			if (!dependencies.containsKey("z"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency z for procedure ValleymansbeanscherryFoodEaten!");
-			return;
-		}
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency entity for procedure ValleymansbeanscherryFoodEaten!");
-			return;
-		}
-		IWorld world = (IWorld) dependencies.get("world");
-		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
-		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
-		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 1200, (int) 233));
-		if (entity instanceof PlayerEntity) {
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1200, 233));
+		if (entity instanceof Player _player) {
 			ItemStack _setstack = new ItemStack(Items.POPPED_CHORUS_FRUIT);
-			_setstack.setCount((int) 1);
-			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+			_setstack.setCount(1);
+			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).setHealth((float) 20);
-		world.setBlockState(new BlockPos(x, y, z), Blocks.PURPLE_WOOL.getDefaultState(), 3);
+		if (entity instanceof LivingEntity _entity)
+			_entity.setHealth(20);
+		world.setBlock(new BlockPos(x, y, z), Blocks.PURPLE_WOOL.defaultBlockState(), 3);
 		for (int index0 = 0; index0 < (int) (10); index0++) {
-			if (world instanceof ServerWorld) {
-				Entity entityToSpawn = new LlamaEntity(EntityType.LLAMA, (World) world);
-				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-				world.addEntity(entityToSpawn);
+			if (world instanceof ServerLevel _level) {
+				Entity entityToSpawn = new Llama(EntityType.LLAMA, _level);
+				entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+				if (entityToSpawn instanceof Mob _mobToSpawn)
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+				world.addFreshEntity(entityToSpawn);
 			}
 		}
 	}

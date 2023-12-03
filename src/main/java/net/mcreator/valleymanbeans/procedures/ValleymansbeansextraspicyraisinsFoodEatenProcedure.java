@@ -1,27 +1,18 @@
 package net.mcreator.valleymanbeans.procedures;
 
-import net.minecraft.util.DamageSource;
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.valleymanbeans.ValleymanBeansMod;
-
-import java.util.Map;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.damagesource.DamageSource;
 
 public class ValleymansbeansextraspicyraisinsFoodEatenProcedure {
-
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency entity for procedure ValleymansbeansextraspicyraisinsFoodEaten!");
+	public static void execute(Entity entity) {
+		if (entity == null)
 			return;
-		}
-		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.BLINDNESS, (int) 600, (int) 1, (false), (false)));
-		entity.setFire((int) 200);
-		entity.attackEntityFrom(DamageSource.ON_FIRE, (float) 5);
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 600, 1, (false), (false)));
+		entity.setSecondsOnFire(200);
+		entity.hurt(DamageSource.ON_FIRE, 5);
 	}
 }

@@ -5,7 +5,7 @@
       "item": "minecraft:bucket"
     },
     {
-      "tag": "minecraft:dirt"
+      "item": "minecraft:dirt"
     }
   ],
   "result": {

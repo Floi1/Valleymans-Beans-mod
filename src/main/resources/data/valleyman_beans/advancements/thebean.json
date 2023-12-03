@@ -20,7 +20,9 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "item": "valleyman_beans:beanswip"
+          "items": [
+            "valleyman_beans:beanswip"
+          ]
         }
       }
     }

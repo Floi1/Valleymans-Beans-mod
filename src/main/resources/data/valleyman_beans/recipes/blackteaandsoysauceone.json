@@ -13,7 +13,7 @@
       "item": "minecraft:coal"
     },
     "2": {
-      "tag": "minecraft:dirt"
+      "item": "minecraft:dirt"
     }
   },
   "result": {

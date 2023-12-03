@@ -1,22 +1,13 @@
 package net.mcreator.valleymanbeans.procedures;
 
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.valleymanbeans.ValleymanBeansMod;
-
-import java.util.Map;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 
 public class ValleymansbeanspremiumdihydrogenmonoxideEntitySwingsItemProcedure {
-
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency entity for procedure ValleymansbeanspremiumdihydrogenmonoxideEntitySwingsItem!");
+	public static void execute(Entity entity) {
+		if (entity == null)
 			return;
-		}
-		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).giveExperiencePoints((int) 5);
+		if (entity instanceof Player _player)
+			_player.giveExperiencePoints(5);
 	}
 }
