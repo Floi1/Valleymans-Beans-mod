@@ -6,9 +6,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.animal.SnowGolem;
 import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
@@ -21,9 +19,9 @@ public class ValleymansbeanscottoncandyFoodEatenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity)
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 600, 233));
-		if (entity instanceof LivingEntity _entity)
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 600, 233));
 		if (entity instanceof Player _player) {
 			ItemStack _setstack = new ItemStack(Blocks.PINK_WOOL);
@@ -32,14 +30,13 @@ public class ValleymansbeanscottoncandyFoodEatenProcedure {
 		}
 		if (entity instanceof LivingEntity _entity)
 			_entity.setHealth(20);
-		world.setBlock(new BlockPos(x, y, z), Blocks.PINK_WOOL.defaultBlockState(), 3);
-		for (int index0 = 0; index0 < (int) (10); index0++) {
+		world.setBlock(BlockPos.containing(x, y, z), Blocks.PINK_WOOL.defaultBlockState(), 3);
+		for (int index0 = 0; index0 < 10; index0++) {
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new SnowGolem(EntityType.SNOW_GOLEM, _level);
-				entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-				world.addFreshEntity(entityToSpawn);
+				Entity entityToSpawn = EntityType.SNOW_GOLEM.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+				if (entityToSpawn != null) {
+					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+				}
 			}
 		}
 	}

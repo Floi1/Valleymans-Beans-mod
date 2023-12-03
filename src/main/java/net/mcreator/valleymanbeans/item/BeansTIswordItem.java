@@ -11,7 +11,6 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.chat.Component;
 
@@ -46,7 +45,7 @@ public class BeansTIswordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(ValleymanBeansModItems.BEANSWIP.get()));
 			}
-		}, 3, 1f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
+		}, 3, 1f, new Item.Properties().fireResistant());
 	}
 
 	@Override

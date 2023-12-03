@@ -52,12 +52,14 @@ public class ValleymanBeansMod {
 
 	public ValleymanBeansMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-		ValleymanBeansModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		ValleymanBeansModBlocks.REGISTRY.register(bus);
+
 		ValleymanBeansModItems.REGISTRY.register(bus);
 		ValleymanBeansModEntities.REGISTRY.register(bus);
+
+		ValleymanBeansModTabs.REGISTRY.register(bus);
 
 		ValleymanBeansModMobEffects.REGISTRY.register(bus);
 		ValleymanBeansModPotions.REGISTRY.register(bus);

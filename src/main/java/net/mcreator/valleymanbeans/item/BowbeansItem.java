@@ -10,7 +10,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -27,7 +26,7 @@ import java.util.List;
 
 public class BowbeansItem extends Item {
 	public BowbeansItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(100));
+		super(new Item.Properties().durability(100));
 	}
 
 	@Override
@@ -59,8 +58,7 @@ public class BowbeansItem extends Item {
 	}
 
 	@Override
-	public void onUsingTick(ItemStack itemstack, LivingEntity entityLiving, int count) {
-		Level world = entityLiving.level;
+	public void onUseTick(Level world, LivingEntity entityLiving, ItemStack itemstack, int count) {
 		if (!world.isClientSide() && entityLiving instanceof ServerPlayer entity) {
 			double x = entity.getX();
 			double y = entity.getY();

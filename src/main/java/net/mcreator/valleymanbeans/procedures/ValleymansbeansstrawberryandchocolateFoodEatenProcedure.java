@@ -9,11 +9,11 @@ public class ValleymansbeansstrawberryandchocolateFoodEatenProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 6000, 10, (false), (false)));
-		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 6000, 50, (false), (false)));
-		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 6000, 50, (false), (false)));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 6000, 10, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 6000, 50, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 6000, 50, false, false));
 	}
 }
