@@ -17,7 +17,7 @@ import net.mcreator.valleymanbeans.procedures.LuckybeansblockBlockDestroyedByPla
 
 public class LuckybeansblockBlock extends Block {
 	public LuckybeansblockBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noLootTable());
 	}
 
 	@Override

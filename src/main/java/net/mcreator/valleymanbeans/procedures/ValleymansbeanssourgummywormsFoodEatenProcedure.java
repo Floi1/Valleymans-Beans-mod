@@ -22,10 +22,8 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.ChatType;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
-import net.minecraft.Util;
 
 import net.mcreator.valleymanbeans.init.ValleymanBeansModItems;
 
@@ -63,7 +61,7 @@ public class ValleymansbeanssourgummywormsFoodEatenProcedure {
 		if (!world.isClientSide()) {
 			MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
 			if (_mcserv != null)
-				_mcserv.getPlayerList().broadcastMessage(new TextComponent("Beans time "), ChatType.SYSTEM, Util.NIL_UUID);
+				_mcserv.getPlayerList().broadcastSystemMessage(Component.literal("Beans time "), false);
 		}
 		if (entity instanceof Player _player)
 			_player.giveExperiencePoints(5000);
