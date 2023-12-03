@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "valleyman_beans:valleymansbeansdreamfish"
+    },
+    "title": {
+      "translate": "advancements.whyjustwhy.title"
+    },
+    "description": {
+      "translate": "advancements.whyjustwhy.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "whyjustwhy": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50000
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:water_bucket"
+    },
+    "2": {
+      "item": "minecraft:beetroot"
+    },
+    "3": {
+      "item": "minecraft:milk_bucket"
+    },
+    "5": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeansmilkdurian",
+    "count": 1
+  }
+}

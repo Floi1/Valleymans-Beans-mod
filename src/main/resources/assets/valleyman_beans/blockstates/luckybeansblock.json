@@ -1,7 +1,7 @@
 {
   "variants": {
-    "normal": {
-      "model": "valleyman_beans:luckybeansblock"
+    "": {
+      "model": "valleyman_beans:block/luckybeansblock"
     }
   }
 }

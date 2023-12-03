@@ -1,0 +1,31 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "valleyman_beans:valleymansbeanspremium"
+    },
+    "title": {
+      "translate": "advancements.thebean.title"
+    },
+    "description": {
+      "translate": "advancements.thebean.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thebean": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "valleyman_beans:beanswip"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2222
+  }
+}
