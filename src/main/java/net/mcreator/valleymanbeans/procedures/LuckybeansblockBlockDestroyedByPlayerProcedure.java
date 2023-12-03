@@ -3,7 +3,7 @@ package net.mcreator.valleymanbeans.procedures;
 import net.minecraftforge.server.ServerLifecycleHooks;
 import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -34,17 +34,14 @@ import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.ChatType;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
-import net.minecraft.Util;
 
 import net.mcreator.valleymanbeans.init.ValleymanBeansModMobEffects;
 import net.mcreator.valleymanbeans.init.ValleymanBeansModItems;
-
-import java.util.Random;
 
 public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -253,10 +250,10 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 				if (_ent != null) {
 					final int _slotid = 0;
 					final int _amount = 10;
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						if (capability instanceof IItemHandlerModifiable) {
 							ItemStack _stk = capability.getStackInSlot(_slotid).copy();
-							if (_stk.hurt(_amount, new Random(), null)) {
+							if (_stk.hurt(_amount, RandomSource.create(), null)) {
 								_stk.shrink(1);
 								_stk.setDamageValue(0);
 							}
@@ -314,12 +311,12 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 				_entity.addEffect(new MobEffectInstance(ValleymanBeansModMobEffects.VALLEYMAN_BEANS_POITION.get(), 60, 25, (false), (false)));
 		} else if (Math.random() <= 0.55) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("what is beans? send help pls"), (false));
+				_player.displayClientMessage(Component.literal("what is beans? send help pls"), (false));
 		} else if (Math.random() <= 0.575) {
 			if (!world.isClientSide()) {
 				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (_mcserv != null)
-					_mcserv.getPlayerList().broadcastMessage(new TextComponent("oh nooooooo"), ChatType.SYSTEM, Util.NIL_UUID);
+					_mcserv.getPlayerList().broadcastSystemMessage(Component.literal("oh nooooooo"), false);
 			}
 		} else if (Math.random() <= 0.6) {
 			for (int index7 = 0; index7 < (int) (35); index7++) {

@@ -21,7 +21,7 @@ import net.mcreator.valleymanbeans.ValleymanBeansMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ValleymanBeansModEntities {
-	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, ValleymanBeansMod.MODID);
+	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ValleymanBeansMod.MODID);
 	public static final RegistryObject<EntityType<BowbeansEntity>> BOWBEANS = register("projectile_bowbeans",
 			EntityType.Builder.<BowbeansEntity>of(BowbeansEntity::new, MobCategory.MISC).setCustomClientFactory(BowbeansEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
