@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:water_bucket"
+    },
+    "1": {
+      "tag": "minecraft:sand"
+    },
+    "2": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeansaustralia",
+    "count": 1
+  }
+}

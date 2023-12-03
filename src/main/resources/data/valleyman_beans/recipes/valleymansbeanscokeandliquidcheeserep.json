@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:water_bucket"
+    },
+    "3": {
+      "item": "minecraft:end_stone"
+    },
+    "4": {
+      "item": "minecraft:coal_block"
+    },
+    "5": {
+      "item": "minecraft:end_stone"
+    },
+    "7": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeanscokeandliquidcheese",
+    "count": 1
+  }
+}

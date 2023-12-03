@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:water_bucket"
+    },
+    "3": {
+      "item": "minecraft:lava_bucket"
+    },
+    "4": {
+      "item": "minecraft:water_bucket"
+    },
+    "5": {
+      "item": "minecraft:lava_bucket"
+    },
+    "6": {
+      "item": "minecraft:acacia_log"
+    },
+    "7": {
+      "tag": "minecraft:dirt"
+    },
+    "8": {
+      "item": "minecraft:acacia_log"
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeanstoothpasteandorangejuice",
+    "count": 1
+  }
+}

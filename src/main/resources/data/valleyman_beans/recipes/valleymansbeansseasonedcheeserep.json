@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:milk_bucket"
+    },
+    "1": {
+      "item": "minecraft:water_bucket"
+    },
+    "2": {
+      "item": "minecraft:milk_bucket"
+    },
+    "3": {
+      "item": "minecraft:wheat"
+    },
+    "4": {
+      "item": "minecraft:milk_bucket"
+    },
+    "5": {
+      "item": "minecraft:wheat"
+    },
+    "6": {
+      "item": "minecraft:milk_bucket"
+    },
+    "7": {
+      "tag": "minecraft:dirt"
+    },
+    "8": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeansseasonedcheese",
+    "count": 1
+  }
+}

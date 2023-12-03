@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    " 4 ",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:water_bucket"
+    },
+    "4": {
+      "item": "minecraft:dandelion"
+    },
+    "6": {
+      "item": "minecraft:sunflower"
+    },
+    "7": {
+      "tag": "minecraft:dirt"
+    },
+    "8": {
+      "item": "minecraft:sunflower"
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeansbanana",
+    "count": 1
+  }
+}

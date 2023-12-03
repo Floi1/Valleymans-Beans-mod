@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:water_bucket"
+    },
+    "3": {
+      "item": "minecraft:purpur_block"
+    },
+    "4": {
+      "item": "minecraft:pink_wool"
+    },
+    "5": {
+      "item": "minecraft:purpur_block"
+    },
+    "7": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeanscottoncandy",
+    "count": 1
+  }
+}
