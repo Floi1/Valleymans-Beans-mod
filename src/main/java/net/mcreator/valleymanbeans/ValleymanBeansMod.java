@@ -29,7 +29,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.valleymanbeans.init.ValleymanBeansModTabs;
 import net.mcreator.valleymanbeans.init.ValleymanBeansModPotions;
 import net.mcreator.valleymanbeans.init.ValleymanBeansModMobEffects;
 import net.mcreator.valleymanbeans.init.ValleymanBeansModItems;
@@ -52,7 +51,6 @@ public class ValleymanBeansMod {
 
 	public ValleymanBeansMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-		ValleymanBeansModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		ValleymanBeansModBlocks.REGISTRY.register(bus);

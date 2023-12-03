@@ -12,20 +12,17 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.valleymanbeans.procedures.ValleymansbeansCubancigarsmokedFoodEatenProcedure;
-import net.mcreator.valleymanbeans.init.ValleymanBeansModTabs;
 
 import java.util.List;
 
 public class ValleymansbeansCubancigarsmokedItem extends Item {
 	public ValleymansbeansCubancigarsmokedItem() {
-		super(new Item.Properties().tab(ValleymanBeansModTabs.TAB_BEANS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(9).saturationMod(1f).alwaysEat()
-
-				.build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(9).saturationMod(1f).alwaysEat().build()));
 	}
 
 	@Override
 	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-		return 0F;
+		return 0f;
 	}
 
 	@Override
@@ -40,7 +37,6 @@ public class ValleymansbeansCubancigarsmokedItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		ValleymansbeansCubancigarsmokedFoodEatenProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "ingredients": [
     {
       "item": "minecraft:water_bucket"
@@ -14,7 +15,7 @@
       "tag": "minecraft:wool"
     },
     {
-      "item": "minecraft:dirt"
+      "tag": "minecraft:dirt"
     }
   ],
   "result": {

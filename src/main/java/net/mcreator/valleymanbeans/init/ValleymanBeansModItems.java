@@ -10,7 +10,6 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.valleymanbeans.item.ValleymansbeanstoothpasteandorangejuiceItem;
@@ -60,7 +59,7 @@ public class ValleymanBeansModItems {
 	public static final RegistryObject<Item> BOWBEANS = REGISTRY.register("bowbeans", () -> new BowbeansItem());
 	public static final RegistryObject<Item> BEANSSWORD = REGISTRY.register("beanssword", () -> new BeansswordItem());
 	public static final RegistryObject<Item> BEANS_T_ISWORD = REGISTRY.register("beans_t_isword", () -> new BeansTIswordItem());
-	public static final RegistryObject<Item> LUCKYBEANSBLOCK = block(ValleymanBeansModBlocks.LUCKYBEANSBLOCK, ValleymanBeansModTabs.TAB_BEANS);
+	public static final RegistryObject<Item> LUCKYBEANSBLOCK = block(ValleymanBeansModBlocks.LUCKYBEANSBLOCK);
 	public static final RegistryObject<Item> BEANSWIP = REGISTRY.register("beanswip", () -> new BeanswipItem());
 	public static final RegistryObject<Item> VALLEYMANSBEANSCLASSICRADIUMMINT = REGISTRY.register("valleymansbeansclassicradiummint", () -> new ValleymansbeansclassicradiummintItem());
 	public static final RegistryObject<Item> VALLEYMANSBEANSPREMIUM = REGISTRY.register("valleymansbeanspremium", () -> new ValleymansbeanspremiumItem());
@@ -99,7 +98,7 @@ public class ValleymanBeansModItems {
 	public static final RegistryObject<Item> VALLEYMANSBEANSSEASONEDCHEESE = REGISTRY.register("valleymansbeansseasonedcheese", () -> new ValleymansbeansseasonedcheeseItem());
 	public static final RegistryObject<Item> VALLEYMANSBEANSSTRAWBERRYANDCHOCOLATE = REGISTRY.register("valleymansbeansstrawberryandchocolate", () -> new ValleymansbeansstrawberryandchocolateItem());
 
-	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
-		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+	private static RegistryObject<Item> block(RegistryObject<Block> block) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
 	}
 }

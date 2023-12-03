@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     " 1 ",
     "345",
@@ -16,10 +17,10 @@
       "item": "minecraft:fern"
     },
     "5": {
-      "item": "minecraft:oak_leaves"
+      "tag": "minecraft:leaves"
     },
     "7": {
-      "item": "minecraft:dirt"
+      "tag": "minecraft:dirt"
     }
   },
   "result": {

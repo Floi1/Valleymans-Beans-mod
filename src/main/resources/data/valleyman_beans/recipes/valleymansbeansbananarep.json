@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     " 1 ",
     " 4 ",
@@ -16,7 +17,7 @@
       "item": "minecraft:sunflower"
     },
     "7": {
-      "item": "minecraft:dirt"
+      "tag": "minecraft:dirt"
     },
     "8": {
       "item": "minecraft:sunflower"

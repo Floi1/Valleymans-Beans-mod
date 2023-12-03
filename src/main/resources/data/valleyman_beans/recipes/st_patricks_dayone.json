@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "ingredients": [
     {
       "item": "minecraft:water_bucket"
@@ -8,7 +9,7 @@
       "tag": "minecraft:small_flowers"
     },
     {
-      "item": "minecraft:dirt"
+      "tag": "minecraft:dirt"
     }
   ],
   "result": {
