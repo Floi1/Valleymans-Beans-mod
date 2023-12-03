@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     "0",
     "1",
@@ -13,7 +14,7 @@
       "item": "minecraft:light_blue_concrete"
     },
     "2": {
-      "item": "minecraft:dirt"
+      "tag": "minecraft:dirt"
     }
   },
   "result": {

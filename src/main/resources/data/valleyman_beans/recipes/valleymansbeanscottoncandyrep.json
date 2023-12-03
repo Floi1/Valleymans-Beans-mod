@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     " 1 ",
     "345",
@@ -19,7 +20,7 @@
       "item": "minecraft:purpur_block"
     },
     "7": {
-      "item": "minecraft:dirt"
+      "tag": "minecraft:dirt"
     }
   },
   "result": {

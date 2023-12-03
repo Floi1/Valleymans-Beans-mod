@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     " 1",
     "23",
@@ -16,7 +17,7 @@
       "item": "minecraft:milk_bucket"
     },
     "5": {
-      "item": "minecraft:dirt"
+      "tag": "minecraft:dirt"
     }
   },
   "result": {

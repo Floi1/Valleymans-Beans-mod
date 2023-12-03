@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     "0",
     "1",
@@ -13,7 +14,7 @@
       "tag": "minecraft:sand"
     },
     "2": {
-      "item": "minecraft:dirt"
+      "tag": "minecraft:dirt"
     }
   },
   "result": {

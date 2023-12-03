@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleyman_beans:items/uprightone"
+    "layer0": "valleyman_beans:item/uprightone"
   }
 }

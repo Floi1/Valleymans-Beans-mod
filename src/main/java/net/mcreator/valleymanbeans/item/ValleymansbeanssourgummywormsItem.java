@@ -12,20 +12,17 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.valleymanbeans.procedures.ValleymansbeanssourgummywormsFoodEatenProcedure;
-import net.mcreator.valleymanbeans.init.ValleymanBeansModTabs;
 
 import java.util.List;
 
 public class ValleymansbeanssourgummywormsItem extends Item {
 	public ValleymansbeanssourgummywormsItem() {
-		super(new Item.Properties().tab(ValleymanBeansModTabs.TAB_BEANS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationMod(3f).alwaysEat()
-
-				.build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationMod(3f).alwaysEat().build()));
 	}
 
 	@Override
 	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-		return 0F;
+		return 0f;
 	}
 
 	@Override
@@ -40,7 +37,6 @@ public class ValleymansbeanssourgummywormsItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		ValleymansbeanssourgummywormsFoodEatenProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}

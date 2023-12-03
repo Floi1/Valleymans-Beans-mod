@@ -12,20 +12,17 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.valleymanbeans.procedures.ValleymansbeansseasonedcheeseFoodEatenProcedure;
-import net.mcreator.valleymanbeans.init.ValleymanBeansModTabs;
 
 import java.util.List;
 
 public class ValleymansbeansseasonedcheeseItem extends Item {
 	public ValleymansbeansseasonedcheeseItem() {
-		super(new Item.Properties().tab(ValleymanBeansModTabs.TAB_BEANS).stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(20).saturationMod(20f).alwaysEat()
-
-				.build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(20).saturationMod(20f).alwaysEat().build()));
 	}
 
 	@Override
 	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-		return 0F;
+		return 0f;
 	}
 
 	@Override
@@ -40,7 +37,6 @@ public class ValleymansbeansseasonedcheeseItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		ValleymansbeansseasonedcheeseFoodEatenProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}

@@ -15,15 +15,12 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.valleymanbeans.procedures.ValleymansbeansavocadoandchocolatechipsFoodEatenProcedure;
-import net.mcreator.valleymanbeans.init.ValleymanBeansModTabs;
 
 import java.util.List;
 
 public class ValleymansbeansavocadoandchocolatechipsItem extends Item {
 	public ValleymansbeansavocadoandchocolatechipsItem() {
-		super(new Item.Properties().tab(ValleymanBeansModTabs.TAB_BEANS).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(-10).saturationMod(-5f).alwaysEat()
-
-				.build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(-10).saturationMod(-5f).alwaysEat().build()));
 	}
 
 	@Override
@@ -33,7 +30,7 @@ public class ValleymansbeansavocadoandchocolatechipsItem extends Item {
 
 	@Override
 	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-		return 0F;
+		return 0f;
 	}
 
 	@Override
@@ -54,7 +51,6 @@ public class ValleymansbeansavocadoandchocolatechipsItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		ValleymansbeansavocadoandchocolatechipsFoodEatenProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}

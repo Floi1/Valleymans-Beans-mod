@@ -1,8 +1,8 @@
 
 package net.mcreator.valleymanbeans.block;
 
-import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -17,7 +17,7 @@ import net.mcreator.valleymanbeans.procedures.LuckybeansblockBlockDestroyedByPla
 
 public class LuckybeansblockBlock extends Block {
 	public LuckybeansblockBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noLootTable());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noLootTable());
 	}
 
 	@Override
