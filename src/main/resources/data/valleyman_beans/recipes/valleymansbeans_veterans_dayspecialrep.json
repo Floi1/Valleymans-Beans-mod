@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:gunpowder"
+    },
+    "1": {
+      "item": "minecraft:gunpowder"
+    },
+    "2": {
+      "item": "minecraft:gunpowder"
+    },
+    "3": {
+      "item": "minecraft:gunpowder"
+    },
+    "4": {
+      "item": "valleyman_beans:beanswip"
+    },
+    "5": {
+      "item": "minecraft:gunpowder"
+    },
+    "6": {
+      "item": "minecraft:gunpowder"
+    },
+    "7": {
+      "item": "minecraft:gunpowder"
+    },
+    "8": {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeans_veterans_dayspecial",
+    "count": 1
+  }
+}
