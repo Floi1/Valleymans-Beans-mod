@@ -61,6 +61,10 @@ public class ValleymanBeansModTabs {
 				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEANSCREAMANDLEMON.get());
 				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEANSSEASONEDCHEESE.get());
 				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEANSSTRAWBERRYANDCHOCOLATE.get());
+				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEAN_CHRISTMAS_2023.get());
+				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEANS_VETERANS_DAYSPECIAL.get());
+				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEANS_HALLOWEENSPECIAL.get());
+				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEANS_EASTERSPECIAL.get());
 			})
 
 					.build());

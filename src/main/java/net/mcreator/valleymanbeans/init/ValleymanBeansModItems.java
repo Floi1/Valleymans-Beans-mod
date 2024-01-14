@@ -42,12 +42,16 @@ import net.mcreator.valleymanbeans.item.ValleymansbeansbananaItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansavocadoandchocolatechipsItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansaustraliaItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansappleandtangerineItem;
+import net.mcreator.valleymanbeans.item.ValleymansbeansVeteransDayspecialItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansStPatricksDayItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansSeafoodpizzaandchocomilkItem;
+import net.mcreator.valleymanbeans.item.ValleymansbeansHalloweenspecialItem;
+import net.mcreator.valleymanbeans.item.ValleymansbeansEasterspecialItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansCubancigarsmokedItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansBraziliansushiItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansBlackteaandsoysauceItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansAustraliadefinitiveeditionItem;
+import net.mcreator.valleymanbeans.item.ValleymansbeanChristmas2023Item;
 import net.mcreator.valleymanbeans.item.BowbeansItem;
 import net.mcreator.valleymanbeans.item.BeanswipItem;
 import net.mcreator.valleymanbeans.item.BeansswordItem;
@@ -97,6 +101,10 @@ public class ValleymanBeansModItems {
 	public static final RegistryObject<Item> VALLEYMANSBEANSCREAMANDLEMON = REGISTRY.register("valleymansbeanscreamandlemon", () -> new ValleymansbeanscreamandlemonItem());
 	public static final RegistryObject<Item> VALLEYMANSBEANSSEASONEDCHEESE = REGISTRY.register("valleymansbeansseasonedcheese", () -> new ValleymansbeansseasonedcheeseItem());
 	public static final RegistryObject<Item> VALLEYMANSBEANSSTRAWBERRYANDCHOCOLATE = REGISTRY.register("valleymansbeansstrawberryandchocolate", () -> new ValleymansbeansstrawberryandchocolateItem());
+	public static final RegistryObject<Item> VALLEYMANSBEAN_CHRISTMAS_2023 = REGISTRY.register("valleymansbean_christmas_2023", () -> new ValleymansbeanChristmas2023Item());
+	public static final RegistryObject<Item> VALLEYMANSBEANS_VETERANS_DAYSPECIAL = REGISTRY.register("valleymansbeans_veterans_dayspecial", () -> new ValleymansbeansVeteransDayspecialItem());
+	public static final RegistryObject<Item> VALLEYMANSBEANS_HALLOWEENSPECIAL = REGISTRY.register("valleymansbeans_halloweenspecial", () -> new ValleymansbeansHalloweenspecialItem());
+	public static final RegistryObject<Item> VALLEYMANSBEANS_EASTERSPECIAL = REGISTRY.register("valleymansbeans_easterspecial", () -> new ValleymansbeansEasterspecialItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
