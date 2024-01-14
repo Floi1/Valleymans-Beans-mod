@@ -17,7 +17,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.valleymanbeans.procedures.ValleymansbeansdreamfishFoodEatenProcedure;
-import net.mcreator.valleymanbeans.itemgroup.BeansItemGroup;
+import net.mcreator.valleymanbeans.init.ValleymanBeansModTabs;
 import net.mcreator.valleymanbeans.ValleymanBeansModElements;
 
 import java.util.stream.Stream;
@@ -32,7 +32,7 @@ public class ValleymansbeansdreamfishItem extends ValleymanBeansModElements.ModE
 	public static final Item block = null;
 
 	public ValleymansbeansdreamfishItem(ValleymanBeansModElements instance) {
-		super(instance, 111);
+		super(instance, 120);
 	}
 
 	@Override
@@ -42,7 +42,8 @@ public class ValleymansbeansdreamfishItem extends ValleymanBeansModElements.ModE
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(BeansItemGroup.tab).maxStackSize(64).rarity(Rarity.EPIC).food((new Food.Builder()).hunger(10).saturation(5f).setAlwaysEdible().build()));
+			super(new Item.Properties().group(ValleymanBeansModTabs.TAB_BEANS).maxStackSize(64).rarity(Rarity.EPIC)
+					.food((new Food.Builder()).hunger(10).saturation(5f).setAlwaysEdible().build()));
 			setRegistryName("valleymansbeansdreamfish");
 		}
 
@@ -75,7 +76,8 @@ public class ValleymansbeansdreamfishItem extends ValleymanBeansModElements.ModE
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			ValleymansbeansdreamfishFoodEatenProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			ValleymansbeansdreamfishFoodEatenProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}
 	}

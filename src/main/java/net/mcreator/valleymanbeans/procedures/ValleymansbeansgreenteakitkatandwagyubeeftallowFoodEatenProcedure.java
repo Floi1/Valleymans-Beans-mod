@@ -14,7 +14,8 @@ public class ValleymansbeansgreenteakitkatandwagyubeeftallowFoodEatenProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				ValleymanBeansMod.LOGGER.warn("Failed to load dependency entity for procedure ValleymansbeansgreenteakitkatandwagyubeeftallowFoodEaten!");
+				ValleymanBeansMod.LOGGER
+						.warn("Failed to load dependency entity for procedure ValleymansbeansgreenteakitkatandwagyubeeftallowFoodEaten!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

@@ -15,7 +15,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.valleymanbeans.procedures.ValleymansbeanssourgummywormsFoodEatenProcedure;
-import net.mcreator.valleymanbeans.itemgroup.BeansItemGroup;
+import net.mcreator.valleymanbeans.init.ValleymanBeansModTabs;
 import net.mcreator.valleymanbeans.ValleymanBeansModElements;
 
 import java.util.stream.Stream;
@@ -30,7 +30,7 @@ public class ValleymansbeanssourgummywormsItem extends ValleymanBeansModElements
 	public static final Item block = null;
 
 	public ValleymansbeanssourgummywormsItem(ValleymanBeansModElements instance) {
-		super(instance, 135);
+		super(instance, 145);
 	}
 
 	@Override
@@ -40,7 +40,8 @@ public class ValleymansbeanssourgummywormsItem extends ValleymanBeansModElements
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(BeansItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON).food((new Food.Builder()).hunger(10).saturation(3f).setAlwaysEdible().build()));
+			super(new Item.Properties().group(ValleymanBeansModTabs.TAB_BEANS).maxStackSize(64).rarity(Rarity.COMMON)
+					.food((new Food.Builder()).hunger(10).saturation(3f).setAlwaysEdible().build()));
 			setRegistryName("valleymansbeanssourgummyworms");
 		}
 
@@ -67,9 +68,10 @@ public class ValleymansbeanssourgummywormsItem extends ValleymanBeansModElements
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			ValleymansbeanssourgummywormsFoodEatenProcedure.executeProcedure(
-					Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			ValleymansbeanssourgummywormsFoodEatenProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}
 	}
