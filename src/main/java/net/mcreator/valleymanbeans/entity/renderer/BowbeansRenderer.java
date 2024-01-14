@@ -17,7 +17,8 @@ public class BowbeansRenderer {
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
-			RenderingRegistry.registerEntityRenderingHandler(BowbeansItem.arrow, renderManager -> new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer()));
+			RenderingRegistry.registerEntityRenderingHandler(BowbeansItem.arrow,
+					renderManager -> new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer()));
 		}
 	}
 }

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:coal"
+    },
+    "1": {
+      "item": "minecraft:coal"
+    },
+    "2": {
+      "item": "minecraft:coal"
+    },
+    "3": {
+      "item": "minecraft:coal"
+    },
+    "4": {
+      "item": "valleyman_beans:valleymansbeanspremiumhohoholidayspecial"
+    },
+    "5": {
+      "item": "minecraft:coal"
+    },
+    "6": {
+      "item": "minecraft:coal"
+    },
+    "7": {
+      "item": "minecraft:coal"
+    },
+    "8": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbean_christmas_2023",
+    "count": 1
+  }
+}

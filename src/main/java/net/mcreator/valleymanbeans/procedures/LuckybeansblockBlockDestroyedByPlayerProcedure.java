@@ -43,7 +43,6 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.valleymanbeans.potion.ValleymanbeanspoitionPotionEffect;
 import net.mcreator.valleymanbeans.item.ValleymansbeanspremiumdihydrogenmonoxideItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeanspremiumItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansdreamfishItem;
@@ -53,6 +52,7 @@ import net.mcreator.valleymanbeans.item.ValleymansbeanscherryItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansStPatricksDayItem;
 import net.mcreator.valleymanbeans.item.BeanswipItem;
 import net.mcreator.valleymanbeans.item.BeansswordItem;
+import net.mcreator.valleymanbeans.init.ValleymanBeansModPotionEffects;
 import net.mcreator.valleymanbeans.ValleymanBeansMod;
 
 import java.util.Random;
@@ -166,42 +166,48 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 				Entity entityToSpawn = new TNTEntity(EntityType.TNT, (World) world);
 				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof ServerWorld) {
 				Entity entityToSpawn = new TNTEntity(EntityType.TNT, (World) world);
 				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof ServerWorld) {
 				Entity entityToSpawn = new TNTEntity(EntityType.TNT, (World) world);
 				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof ServerWorld) {
 				Entity entityToSpawn = new TNTEntity(EntityType.TNT, (World) world);
 				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof ServerWorld) {
 				Entity entityToSpawn = new TNTEntity(EntityType.TNT, (World) world);
 				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof ServerWorld) {
 				Entity entityToSpawn = new TNTEntity(EntityType.TNT, (World) world);
 				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 				world.addEntity(entityToSpawn);
 			}
 		} else if (Math.random() <= 0.325) {
@@ -210,14 +216,16 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 					Entity entityToSpawn = new HuskEntity(EntityType.HUSK, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
-						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new EvokerEntity(EntityType.EVOKER, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
-						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
 			}
@@ -235,7 +243,8 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 					Entity entityToSpawn = new ChickenEntity(EntityType.CHICKEN, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
-						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
 			}
@@ -314,47 +323,54 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 					Entity entityToSpawn = new ShulkerEntity(EntityType.SHULKER, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
-						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new BoatEntity(EntityType.BOAT, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
-						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new DragonFireballEntity(EntityType.DRAGON_FIREBALL, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
-						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new EggEntity(EntityType.EGG, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
-						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new MagmaCubeEntity(EntityType.MAGMA_CUBE, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
-						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new SlimeEntity(EntityType.SLIME, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
-						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
 			}
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(ValleymanbeanspoitionPotionEffect.potion, (int) 60, (int) 25, (false), (false)));
+				((LivingEntity) entity).addPotionEffect(
+						new EffectInstance(ValleymanBeansModPotionEffects.VALLEYMAN_BEANS_POITION.get(), (int) 60, (int) 25, (false), (false)));
 		} else if (Math.random() <= 0.55) {
 			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("what is beans? send help pls"), (false));
@@ -371,7 +387,8 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 					Entity entityToSpawn = new TNTEntity(EntityType.TNT, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
-						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
 			}
@@ -466,7 +483,8 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 					Entity entityToSpawn = new ZombieEntity(EntityType.ZOMBIE, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
-						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
 			}

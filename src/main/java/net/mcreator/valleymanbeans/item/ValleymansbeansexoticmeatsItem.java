@@ -15,7 +15,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.valleymanbeans.procedures.ValleymansbeansexoticmeatsFoodEatenProcedure;
-import net.mcreator.valleymanbeans.itemgroup.BeansItemGroup;
+import net.mcreator.valleymanbeans.init.ValleymanBeansModTabs;
 import net.mcreator.valleymanbeans.ValleymanBeansModElements;
 
 import java.util.stream.Stream;
@@ -30,7 +30,7 @@ public class ValleymansbeansexoticmeatsItem extends ValleymanBeansModElements.Mo
 	public static final Item block = null;
 
 	public ValleymansbeansexoticmeatsItem(ValleymanBeansModElements instance) {
-		super(instance, 122);
+		super(instance, 131);
 	}
 
 	@Override
@@ -40,9 +40,10 @@ public class ValleymansbeansexoticmeatsItem extends ValleymanBeansModElements.Mo
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(BeansItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON).food((new Food.Builder()).hunger(20).saturation(3.9999999999999996f)
+			super(new Item.Properties().group(ValleymanBeansModTabs.TAB_BEANS).maxStackSize(64).rarity(Rarity.COMMON)
+					.food((new Food.Builder()).hunger(20).saturation(3.9999999999999996f)
 
-					.build()));
+							.build()));
 			setRegistryName("valleymansbeansexoticmeats");
 		}
 
@@ -69,7 +70,8 @@ public class ValleymansbeansexoticmeatsItem extends ValleymanBeansModElements.Mo
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			ValleymansbeansexoticmeatsFoodEatenProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			ValleymansbeansexoticmeatsFoodEatenProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}
 	}

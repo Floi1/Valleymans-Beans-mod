@@ -74,7 +74,8 @@ public class ValleymansbeanscottoncandyFoodEatenProcedure {
 				Entity entityToSpawn = new SnowGolemEntity(EntityType.SNOW_GOLEM, (World) world);
 				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 				world.addEntity(entityToSpawn);
 			}
 		}

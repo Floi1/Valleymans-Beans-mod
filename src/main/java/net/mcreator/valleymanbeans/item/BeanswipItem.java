@@ -15,7 +15,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.valleymanbeans.procedures.BeanswipFoodEatenProcedure;
-import net.mcreator.valleymanbeans.itemgroup.BeansItemGroup;
+import net.mcreator.valleymanbeans.init.ValleymanBeansModTabs;
 import net.mcreator.valleymanbeans.ValleymanBeansModElements;
 
 import java.util.stream.Stream;
@@ -30,7 +30,7 @@ public class BeanswipItem extends ValleymanBeansModElements.ModElement {
 	public static final Item block = null;
 
 	public BeanswipItem(ValleymanBeansModElements instance) {
-		super(instance, 106);
+		super(instance, 115);
 	}
 
 	@Override
@@ -40,7 +40,8 @@ public class BeanswipItem extends ValleymanBeansModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(BeansItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON).food((new Food.Builder()).hunger(-11).saturation(-1.7000000000000002f).setAlwaysEdible().build()));
+			super(new Item.Properties().group(ValleymanBeansModTabs.TAB_BEANS).maxStackSize(64).rarity(Rarity.COMMON)
+					.food((new Food.Builder()).hunger(-11).saturation(-1.7000000000000002f).setAlwaysEdible().build()));
 			setRegistryName("beanswip");
 		}
 
@@ -67,7 +68,8 @@ public class BeanswipItem extends ValleymanBeansModElements.ModElement {
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			BeanswipFoodEatenProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			BeanswipFoodEatenProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}
 	}

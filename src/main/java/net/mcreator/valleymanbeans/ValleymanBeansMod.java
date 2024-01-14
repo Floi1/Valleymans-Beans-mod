@@ -27,6 +27,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
 
@@ -35,6 +36,10 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.EntityType;
 import net.minecraft.block.Block;
 
+import net.mcreator.valleymanbeans.init.ValleymanBeansModTabs;
+import net.mcreator.valleymanbeans.init.ValleymanBeansModPotions;
+import net.mcreator.valleymanbeans.init.ValleymanBeansModPotionEffects;
+
 import java.util.function.Supplier;
 
 @Mod("valleyman_beans")
@@ -42,7 +47,8 @@ public class ValleymanBeansMod {
 	public static final Logger LOGGER = LogManager.getLogger(ValleymanBeansMod.class);
 	public static final String MODID = "valleyman_beans";
 	private static final String PROTOCOL_VERSION = "1";
-	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
+	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION,
+			PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	public ValleymanBeansModElements elements;
 
 	public ValleymanBeansMod() {
@@ -51,6 +57,11 @@ public class ValleymanBeansMod {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientLoad);
 		MinecraftForge.EVENT_BUS.register(new ValleymanBeansModFMLBusEvents(this));
+		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		ValleymanBeansModPotionEffects.REGISTRY.register(bus);
+		ValleymanBeansModPotions.REGISTRY.register(bus);
+
+		ValleymanBeansModTabs.load();
 	}
 
 	private void init(FMLCommonSetupEvent event) {
@@ -74,11 +85,6 @@ public class ValleymanBeansMod {
 	@SubscribeEvent
 	public void registerEntities(RegistryEvent.Register<EntityType<?>> event) {
 		event.getRegistry().registerAll(elements.getEntities().stream().map(Supplier::get).toArray(EntityType[]::new));
-	}
-
-	@SubscribeEvent
-	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {
-		elements.registerSounds(event);
 	}
 
 	private static class ValleymanBeansModFMLBusEvents {
