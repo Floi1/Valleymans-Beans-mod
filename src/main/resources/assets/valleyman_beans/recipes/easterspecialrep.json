@@ -1,0 +1,42 @@
+{
+  "group": "valleyman_beans",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:rabbit"
+    },
+    "1": {
+      "item": "minecraft:rabbit"
+    },
+    "2": {
+      "item": "minecraft:rabbit"
+    },
+    "3": {
+      "item": "minecraft:rabbit"
+    },
+    "4": {
+      "item": "valleyman_beans:beanswip"
+    },
+    "5": {
+      "item": "minecraft:rabbit"
+    },
+    "6": {
+      "item": "minecraft:rabbit"
+    },
+    "7": {
+      "item": "minecraft:rabbit"
+    },
+    "8": {
+      "item": "minecraft:rabbit"
+    }
+  },
+  "result": {
+    "item": "valleyman_beans:valleymansbeans_easterspecial",
+    "count": 1
+  }
+}
