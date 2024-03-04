@@ -2,25 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    " 4 ",
-    "678"
+    " a ",
+    " b ",
+    "cdc"
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:water_bucket"
     },
-    "4": {
+    "b": {
       "item": "minecraft:dandelion"
     },
-    "6": {
+    "c": {
       "item": "minecraft:sunflower"
     },
-    "7": {
+    "d": {
       "tag": "minecraft:dirt"
-    },
-    "8": {
-      "item": "minecraft:sunflower"
     }
   },
   "result": {

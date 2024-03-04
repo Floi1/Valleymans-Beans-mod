@@ -4,13 +4,14 @@
  */
 package net.mcreator.valleymanbeans.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.bus.api.IEventBus;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.valleymanbeans.item.ValleymansbeanstoothpasteandorangejuiceItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansthattasteItem;
@@ -59,54 +60,60 @@ import net.mcreator.valleymanbeans.item.BeansTIswordItem;
 import net.mcreator.valleymanbeans.ValleymanBeansMod;
 
 public class ValleymanBeansModItems {
-	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, ValleymanBeansMod.MODID);
-	public static final RegistryObject<Item> BOWBEANS = REGISTRY.register("bowbeans", () -> new BowbeansItem());
-	public static final RegistryObject<Item> BEANSSWORD = REGISTRY.register("beanssword", () -> new BeansswordItem());
-	public static final RegistryObject<Item> BEANS_T_ISWORD = REGISTRY.register("beans_t_isword", () -> new BeansTIswordItem());
-	public static final RegistryObject<Item> LUCKYBEANSBLOCK = block(ValleymanBeansModBlocks.LUCKYBEANSBLOCK);
-	public static final RegistryObject<Item> BEANSWIP = REGISTRY.register("beanswip", () -> new BeanswipItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSCLASSICRADIUMMINT = REGISTRY.register("valleymansbeansclassicradiummint", () -> new ValleymansbeansclassicradiummintItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSPREMIUM = REGISTRY.register("valleymansbeanspremium", () -> new ValleymansbeanspremiumItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSEXTRADIET = REGISTRY.register("valleymansbeansextradiet", () -> new ValleymansbeansextradietItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSSMOKEDONIONS = REGISTRY.register("valleymansbeanssmokedonions", () -> new ValleymansbeanssmokedonionsItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSDREAMFISH = REGISTRY.register("valleymansbeansdreamfish", () -> new ValleymansbeansdreamfishItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSPREMIUMHOHOHOLIDAYSPECIAL = REGISTRY.register("valleymansbeanspremiumhohoholidayspecial", () -> new ValleymansbeanspremiumhohoholidayspecialItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANS_ST_PATRICKS_DAY = REGISTRY.register("valleymansbeans_st_patricks_day", () -> new ValleymansbeansStPatricksDayItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSTHATTASTE = REGISTRY.register("valleymansbeansthattaste", () -> new ValleymansbeansthattasteItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSBLUEBERRYJAM = REGISTRY.register("valleymansbeansblueberryjam", () -> new ValleymansbeansblueberryjamItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSRASPBERRY = REGISTRY.register("valleymansbeansraspberry", () -> new ValleymansbeansraspberryItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSPREMIUMDIHYDROGENMONOXIDE = REGISTRY.register("valleymansbeanspremiumdihydrogenmonoxide", () -> new ValleymansbeanspremiumdihydrogenmonoxideItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANS_AUSTRALIADEFINITIVEEDITION = REGISTRY.register("valleymansbeans_australiadefinitiveedition", () -> new ValleymansbeansAustraliadefinitiveeditionItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANS_SEAFOODPIZZAANDCHOCOMILK = REGISTRY.register("valleymansbeans_seafoodpizzaandchocomilk", () -> new ValleymansbeansSeafoodpizzaandchocomilkItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANS_BLACKTEAANDSOYSAUCE = REGISTRY.register("valleymansbeans_blackteaandsoysauce", () -> new ValleymansbeansBlackteaandsoysauceItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSAPPLEANDTANGERINE = REGISTRY.register("valleymansbeansappleandtangerine", () -> new ValleymansbeansappleandtangerineItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSEXOTICMEATS = REGISTRY.register("valleymansbeansexoticmeats", () -> new ValleymansbeansexoticmeatsItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANS_CUBANCIGARSMOKED = REGISTRY.register("valleymansbeans_cubancigarsmoked", () -> new ValleymansbeansCubancigarsmokedItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSBANANA = REGISTRY.register("valleymansbeansbanana", () -> new ValleymansbeansbananaItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANS_BRAZILIANSUSHI = REGISTRY.register("valleymansbeans_braziliansushi", () -> new ValleymansbeansBraziliansushiItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSCHERRY = REGISTRY.register("valleymansbeanscherry", () -> new ValleymansbeanscherryItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSEXTRASPICYRAISINS = REGISTRY.register("valleymansbeansextraspicyraisins", () -> new ValleymansbeansextraspicyraisinsItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSFERMENTEDSHARK = REGISTRY.register("valleymansbeansfermentedshark", () -> new ValleymansbeansfermentedsharkItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSMILKDURIAN = REGISTRY.register("valleymansbeansmilkdurian", () -> new ValleymansbeansmilkdurianItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSCOKEANDLIQUIDCHEESE = REGISTRY.register("valleymansbeanscokeandliquidcheese", () -> new ValleymansbeanscokeandliquidcheeseItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSAUSTRALIA = REGISTRY.register("valleymansbeansaustralia", () -> new ValleymansbeansaustraliaItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSAVOCADOANDCHOCOLATECHIPS = REGISTRY.register("valleymansbeansavocadoandchocolatechips", () -> new ValleymansbeansavocadoandchocolatechipsItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSSMARTIIESANDSKEETTLES = REGISTRY.register("valleymansbeanssmartiiesandskeettles", () -> new ValleymansbeanssmartiiesandskeettlesItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSGREENTEAKITKATANDWAGYUBEEFTALLOW = REGISTRY.register("valleymansbeansgreenteakitkatandwagyubeeftallow", () -> new ValleymansbeansgreenteakitkatandwagyubeeftallowItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSSOURGUMMYWORMS = REGISTRY.register("valleymansbeanssourgummyworms", () -> new ValleymansbeanssourgummywormsItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSMILK = REGISTRY.register("valleymansbeansmilk", () -> new ValleymansbeansmilkItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSMINTANDLICORICE = REGISTRY.register("valleymansbeansmintandlicorice", () -> new ValleymansbeansmintandlicoriceItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSCOTTONCANDY = REGISTRY.register("valleymansbeanscottoncandy", () -> new ValleymansbeanscottoncandyItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSTOOTHPASTEANDORANGEJUICE = REGISTRY.register("valleymansbeanstoothpasteandorangejuice", () -> new ValleymansbeanstoothpasteandorangejuiceItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSCREAMANDLEMON = REGISTRY.register("valleymansbeanscreamandlemon", () -> new ValleymansbeanscreamandlemonItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSSEASONEDCHEESE = REGISTRY.register("valleymansbeansseasonedcheese", () -> new ValleymansbeansseasonedcheeseItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANSSTRAWBERRYANDCHOCOLATE = REGISTRY.register("valleymansbeansstrawberryandchocolate", () -> new ValleymansbeansstrawberryandchocolateItem());
-	public static final RegistryObject<Item> VALLEYMANSBEAN_CHRISTMAS_2023 = REGISTRY.register("valleymansbean_christmas_2023", () -> new ValleymansbeanChristmas2023Item());
-	public static final RegistryObject<Item> VALLEYMANSBEANS_VETERANS_DAYSPECIAL = REGISTRY.register("valleymansbeans_veterans_dayspecial", () -> new ValleymansbeansVeteransDayspecialItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANS_HALLOWEENSPECIAL = REGISTRY.register("valleymansbeans_halloweenspecial", () -> new ValleymansbeansHalloweenspecialItem());
-	public static final RegistryObject<Item> VALLEYMANSBEANS_EASTERSPECIAL = REGISTRY.register("valleymansbeans_easterspecial", () -> new ValleymansbeansEasterspecialItem());
+	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(BuiltInRegistries.ITEM, ValleymanBeansMod.MODID);
+	public static final DeferredHolder<Item, Item> BEANSSWORD = REGISTRY.register("beanssword", () -> new BeansswordItem());
+	public static final DeferredHolder<Item, Item> BEANS_T_ISWORD = REGISTRY.register("beans_t_isword", () -> new BeansTIswordItem());
+	public static final DeferredHolder<Item, Item> LUCKYBEANSBLOCK = block(ValleymanBeansModBlocks.LUCKYBEANSBLOCK);
+	public static final DeferredHolder<Item, Item> BEANSWIP = REGISTRY.register("beanswip", () -> new BeanswipItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSCLASSICRADIUMMINT = REGISTRY.register("valleymansbeansclassicradiummint", () -> new ValleymansbeansclassicradiummintItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSPREMIUM = REGISTRY.register("valleymansbeanspremium", () -> new ValleymansbeanspremiumItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSEXTRADIET = REGISTRY.register("valleymansbeansextradiet", () -> new ValleymansbeansextradietItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSSMOKEDONIONS = REGISTRY.register("valleymansbeanssmokedonions", () -> new ValleymansbeanssmokedonionsItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSDREAMFISH = REGISTRY.register("valleymansbeansdreamfish", () -> new ValleymansbeansdreamfishItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSPREMIUMHOHOHOLIDAYSPECIAL = REGISTRY.register("valleymansbeanspremiumhohoholidayspecial", () -> new ValleymansbeanspremiumhohoholidayspecialItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANS_ST_PATRICKS_DAY = REGISTRY.register("valleymansbeans_st_patricks_day", () -> new ValleymansbeansStPatricksDayItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSTHATTASTE = REGISTRY.register("valleymansbeansthattaste", () -> new ValleymansbeansthattasteItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSBLUEBERRYJAM = REGISTRY.register("valleymansbeansblueberryjam", () -> new ValleymansbeansblueberryjamItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSRASPBERRY = REGISTRY.register("valleymansbeansraspberry", () -> new ValleymansbeansraspberryItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSPREMIUMDIHYDROGENMONOXIDE = REGISTRY.register("valleymansbeanspremiumdihydrogenmonoxide", () -> new ValleymansbeanspremiumdihydrogenmonoxideItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANS_AUSTRALIADEFINITIVEEDITION = REGISTRY.register("valleymansbeans_australiadefinitiveedition", () -> new ValleymansbeansAustraliadefinitiveeditionItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANS_SEAFOODPIZZAANDCHOCOMILK = REGISTRY.register("valleymansbeans_seafoodpizzaandchocomilk", () -> new ValleymansbeansSeafoodpizzaandchocomilkItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANS_BLACKTEAANDSOYSAUCE = REGISTRY.register("valleymansbeans_blackteaandsoysauce", () -> new ValleymansbeansBlackteaandsoysauceItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSAPPLEANDTANGERINE = REGISTRY.register("valleymansbeansappleandtangerine", () -> new ValleymansbeansappleandtangerineItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSEXOTICMEATS = REGISTRY.register("valleymansbeansexoticmeats", () -> new ValleymansbeansexoticmeatsItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANS_CUBANCIGARSMOKED = REGISTRY.register("valleymansbeans_cubancigarsmoked", () -> new ValleymansbeansCubancigarsmokedItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSBANANA = REGISTRY.register("valleymansbeansbanana", () -> new ValleymansbeansbananaItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANS_BRAZILIANSUSHI = REGISTRY.register("valleymansbeans_braziliansushi", () -> new ValleymansbeansBraziliansushiItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSCHERRY = REGISTRY.register("valleymansbeanscherry", () -> new ValleymansbeanscherryItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSEXTRASPICYRAISINS = REGISTRY.register("valleymansbeansextraspicyraisins", () -> new ValleymansbeansextraspicyraisinsItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSFERMENTEDSHARK = REGISTRY.register("valleymansbeansfermentedshark", () -> new ValleymansbeansfermentedsharkItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSMILKDURIAN = REGISTRY.register("valleymansbeansmilkdurian", () -> new ValleymansbeansmilkdurianItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSCOKEANDLIQUIDCHEESE = REGISTRY.register("valleymansbeanscokeandliquidcheese", () -> new ValleymansbeanscokeandliquidcheeseItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSAUSTRALIA = REGISTRY.register("valleymansbeansaustralia", () -> new ValleymansbeansaustraliaItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSAVOCADOANDCHOCOLATECHIPS = REGISTRY.register("valleymansbeansavocadoandchocolatechips", () -> new ValleymansbeansavocadoandchocolatechipsItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSSMARTIIESANDSKEETTLES = REGISTRY.register("valleymansbeanssmartiiesandskeettles", () -> new ValleymansbeanssmartiiesandskeettlesItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSGREENTEAKITKATANDWAGYUBEEFTALLOW = REGISTRY.register("valleymansbeansgreenteakitkatandwagyubeeftallow", () -> new ValleymansbeansgreenteakitkatandwagyubeeftallowItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSSOURGUMMYWORMS = REGISTRY.register("valleymansbeanssourgummyworms", () -> new ValleymansbeanssourgummywormsItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSMILK = REGISTRY.register("valleymansbeansmilk", () -> new ValleymansbeansmilkItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSMINTANDLICORICE = REGISTRY.register("valleymansbeansmintandlicorice", () -> new ValleymansbeansmintandlicoriceItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSCOTTONCANDY = REGISTRY.register("valleymansbeanscottoncandy", () -> new ValleymansbeanscottoncandyItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSTOOTHPASTEANDORANGEJUICE = REGISTRY.register("valleymansbeanstoothpasteandorangejuice", () -> new ValleymansbeanstoothpasteandorangejuiceItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSCREAMANDLEMON = REGISTRY.register("valleymansbeanscreamandlemon", () -> new ValleymansbeanscreamandlemonItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSSEASONEDCHEESE = REGISTRY.register("valleymansbeansseasonedcheese", () -> new ValleymansbeansseasonedcheeseItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANSSTRAWBERRYANDCHOCOLATE = REGISTRY.register("valleymansbeansstrawberryandchocolate", () -> new ValleymansbeansstrawberryandchocolateItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEAN_CHRISTMAS_2023 = REGISTRY.register("valleymansbean_christmas_2023", () -> new ValleymansbeanChristmas2023Item());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANS_VETERANS_DAYSPECIAL = REGISTRY.register("valleymansbeans_veterans_dayspecial", () -> new ValleymansbeansVeteransDayspecialItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANS_HALLOWEENSPECIAL = REGISTRY.register("valleymansbeans_halloweenspecial", () -> new ValleymansbeansHalloweenspecialItem());
+	public static final DeferredHolder<Item, Item> VALLEYMANSBEANS_EASTERSPECIAL = REGISTRY.register("valleymansbeans_easterspecial", () -> new ValleymansbeansEasterspecialItem());
+	public static final DeferredHolder<Item, Item> BOWBEANS = REGISTRY.register("bowbeans", () -> new BowbeansItem());
 
-	private static RegistryObject<Item> block(RegistryObject<Block> block) {
+	// Start of user code block custom items
+	// End of user code block custom items
+	public static void register(IEventBus bus) {
+		REGISTRY.register(bus);
+	}
+
+	private static DeferredHolder<Item, Item> block(DeferredHolder<Block, Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
 	}
 }

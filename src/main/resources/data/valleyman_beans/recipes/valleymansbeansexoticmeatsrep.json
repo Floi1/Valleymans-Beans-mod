@@ -2,24 +2,24 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "bcd",
+    " e "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:water_bucket"
     },
-    "3": {
+    "b": {
       "item": "minecraft:chicken"
     },
-    "4": {
+    "c": {
       "item": "minecraft:beef"
     },
-    "5": {
+    "d": {
       "item": "minecraft:porkchop"
     },
-    "7": {
+    "e": {
       "tag": "minecraft:dirt"
     }
   },

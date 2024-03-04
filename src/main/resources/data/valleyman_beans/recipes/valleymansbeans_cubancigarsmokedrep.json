@@ -2,24 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "bbb",
+    " c "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:water_bucket"
     },
-    "3": {
+    "b": {
       "item": "minecraft:rotten_flesh"
     },
-    "4": {
-      "item": "minecraft:rotten_flesh"
-    },
-    "5": {
-      "item": "minecraft:rotten_flesh"
-    },
-    "7": {
+    "c": {
       "tag": "minecraft:dirt"
     }
   },

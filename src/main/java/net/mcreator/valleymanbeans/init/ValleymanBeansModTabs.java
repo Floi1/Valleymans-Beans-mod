@@ -4,11 +4,11 @@
  */
 package net.mcreator.valleymanbeans.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -21,7 +21,7 @@ import net.mcreator.valleymanbeans.ValleymanBeansMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ValleymanBeansModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ValleymanBeansMod.MODID);
-	public static final RegistryObject<CreativeModeTab> BEANS = REGISTRY.register("beans",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BEANS = REGISTRY.register("beans",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.valleyman_beans.beans")).icon(() -> new ItemStack(ValleymanBeansModItems.BEANSWIP.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(ValleymanBeansModBlocks.LUCKYBEANSBLOCK.get().asItem());
 				tabData.accept(ValleymanBeansModItems.BEANSWIP.get());
@@ -71,11 +71,10 @@ public class ValleymanBeansModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(ValleymanBeansModItems.BOWBEANS.get());
 			tabData.accept(ValleymanBeansModItems.BEANSSWORD.get());
 			tabData.accept(ValleymanBeansModItems.BEANS_T_ISWORD.get());
+			tabData.accept(ValleymanBeansModItems.BOWBEANS.get());
 		}
 	}
 }

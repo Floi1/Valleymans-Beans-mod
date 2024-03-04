@@ -1,24 +1,26 @@
 modLoader="javafml"
-loaderVersion="[47,)"
+loaderVersion="[2,)"
 license="Apache License version 2.0"
 
 [[mods]]
 modId="valleyman_beans"
-version="7.9.0"
+version="8.9.0"
 displayName="valleyman beans"
-credits="floi"
 displayURL="https://www.curseforge.com/minecraft/search?page=1&pageSize=20&sortType=1&class=mc-mods"
 logoFile="logo.png"
+credits="floi"
 authors="Floi"
 description="beans"
 
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
 [[dependencies.valleyman_beans]]
     modId="minecraft"
-    mandatory=true
-    versionRange="[1.20.1]"
+    type="required"
+    versionRange="[1.20.4]"
     ordering="NONE"
     side="BOTH"
-
 
 
 

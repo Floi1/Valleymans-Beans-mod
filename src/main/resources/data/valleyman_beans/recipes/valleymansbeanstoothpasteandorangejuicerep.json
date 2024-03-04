@@ -2,31 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    "678"
+    " a ",
+    "bab",
+    "cdc"
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:water_bucket"
     },
-    "3": {
+    "b": {
       "item": "minecraft:lava_bucket"
     },
-    "4": {
-      "item": "minecraft:water_bucket"
-    },
-    "5": {
-      "item": "minecraft:lava_bucket"
-    },
-    "6": {
+    "c": {
       "item": "minecraft:acacia_log"
     },
-    "7": {
+    "d": {
       "tag": "minecraft:dirt"
-    },
-    "8": {
-      "item": "minecraft:acacia_log"
     }
   },
   "result": {

@@ -2,24 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "bcb",
+    " d "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:water_bucket"
     },
-    "3": {
+    "b": {
       "item": "minecraft:purpur_block"
     },
-    "4": {
+    "c": {
       "item": "minecraft:pink_wool"
     },
-    "5": {
-      "item": "minecraft:purpur_block"
-    },
-    "7": {
+    "d": {
       "tag": "minecraft:dirt"
     }
   },

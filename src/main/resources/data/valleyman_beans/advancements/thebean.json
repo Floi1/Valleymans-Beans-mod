@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "thebean": {
+    "thebean_0": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {

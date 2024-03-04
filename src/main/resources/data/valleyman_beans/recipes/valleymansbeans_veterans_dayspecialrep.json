@@ -2,37 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "aba",
+    "aaa"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:gunpowder"
     },
-    "1": {
-      "item": "minecraft:gunpowder"
-    },
-    "2": {
-      "item": "minecraft:gunpowder"
-    },
-    "3": {
-      "item": "minecraft:gunpowder"
-    },
-    "4": {
+    "b": {
       "item": "valleyman_beans:beanswip"
-    },
-    "5": {
-      "item": "minecraft:gunpowder"
-    },
-    "6": {
-      "item": "minecraft:gunpowder"
-    },
-    "7": {
-      "item": "minecraft:gunpowder"
-    },
-    "8": {
-      "item": "minecraft:gunpowder"
     }
   },
   "result": {

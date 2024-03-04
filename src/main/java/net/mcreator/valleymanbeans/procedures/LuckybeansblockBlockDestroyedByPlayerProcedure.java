@@ -1,11 +1,11 @@
 package net.mcreator.valleymanbeans.procedures;
 
-import net.minecraftforge.items.ItemHandlerHelper;
-import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.common.extensions.ILevelExtension;
+import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -34,61 +34,61 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 			return;
 		if (Math.random() <= 0.025) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Items.FIREWORK_ROCKET);
+				ItemStack _setstack = new ItemStack(Items.FIREWORK_ROCKET).copy();
 				_setstack.setCount(32);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.05) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSDREAMFISH.get());
+				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSDREAMFISH.get()).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.075) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Items.GOLDEN_CARROT);
+				ItemStack _setstack = new ItemStack(Items.GOLDEN_CARROT).copy();
 				_setstack.setCount(32);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.1) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Blocks.PURPLE_SHULKER_BOX);
+				ItemStack _setstack = new ItemStack(Blocks.PURPLE_SHULKER_BOX).copy();
 				_setstack.setCount(2);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.125) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Blocks.EMERALD_ORE);
+				ItemStack _setstack = new ItemStack(Blocks.EMERALD_ORE).copy();
 				_setstack.setCount(16);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.15) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Blocks.DIAMOND_BLOCK);
+				ItemStack _setstack = new ItemStack(Blocks.DIAMOND_BLOCK).copy();
 				_setstack.setCount(16);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.175) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Blocks.NETHER_QUARTZ_ORE);
+				ItemStack _setstack = new ItemStack(Blocks.NETHER_QUARTZ_ORE).copy();
 				_setstack.setCount(32);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.2) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Items.DRAGON_HEAD);
+				ItemStack _setstack = new ItemStack(Items.DRAGON_HEAD).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.225) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Blocks.TNT);
+				ItemStack _setstack = new ItemStack(Blocks.TNT).copy();
 				_setstack.setCount(64);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.25) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Blocks.ENDER_CHEST);
+				ItemStack _setstack = new ItemStack(Blocks.ENDER_CHEST).copy();
 				_setstack.setCount(2);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
@@ -220,22 +220,14 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 			world.setBlock(BlockPos.containing(x, y + 8, z), Blocks.BOOKSHELF.defaultBlockState(), 3);
 			world.setBlock(BlockPos.containing(x, y + 9, z), Blocks.CAKE.defaultBlockState(), 3);
 		} else if (Math.random() <= 0.5) {
-			{
-				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-				if (_ent != null) {
-					final int _slotid = 0;
-					final int _amount = 10;
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-						if (capability instanceof IItemHandlerModifiable) {
-							ItemStack _stk = capability.getStackInSlot(_slotid).copy();
-							if (_stk.hurt(_amount, RandomSource.create(), null)) {
-								_stk.shrink(1);
-								_stk.setDamageValue(0);
-							}
-							((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
-						}
-					});
+			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+				int _slotid = 0;
+				ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+				if (_stk.hurt(10, RandomSource.create(), null)) {
+					_stk.shrink(1);
+					_stk.setDamageValue(0);
 				}
+				_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
 			}
 		} else if (Math.random() <= 0.525) {
 			for (int index6 = 0; index6 < 15; index6++) {
@@ -302,79 +294,79 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 			world.setBlock(BlockPos.containing(x, y + 5, z), Blocks.IRON_BLOCK.defaultBlockState(), 3);
 		} else if (Math.random() <= 0.65) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSPREMIUM.get());
+				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSPREMIUM.get()).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.675) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSCLASSICRADIUMMINT.get());
+				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSCLASSICRADIUMMINT.get()).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.7) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSPREMIUMDIHYDROGENMONOXIDE.get());
+				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSPREMIUMDIHYDROGENMONOXIDE.get()).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.725) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSCOTTONCANDY.get());
+				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSCOTTONCANDY.get()).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.75) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSCHERRY.get());
+				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSCHERRY.get()).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.775) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANS_ST_PATRICKS_DAY.get());
+				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANS_ST_PATRICKS_DAY.get()).copy();
 				_setstack.setCount(16);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.8) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Blocks.ENCHANTING_TABLE);
+				ItemStack _setstack = new ItemStack(Blocks.ENCHANTING_TABLE).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.825) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.BEANSSWORD.get());
+				ItemStack _setstack = new ItemStack(ValleymanBeansModItems.BEANSSWORD.get()).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.85) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Items.NETHER_STAR);
+				ItemStack _setstack = new ItemStack(Items.NETHER_STAR).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.875) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Blocks.BEACON);
+				ItemStack _setstack = new ItemStack(Blocks.BEACON).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.9) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Blocks.DRAGON_EGG);
+				ItemStack _setstack = new ItemStack(Blocks.DRAGON_EGG).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.925) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Items.DIAMOND_SWORD);
+				ItemStack _setstack = new ItemStack(Items.DIAMOND_SWORD).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else if (Math.random() <= 0.95) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(Items.POISONOUS_POTATO);
+				ItemStack _setstack = new ItemStack(Items.POISONOUS_POTATO).copy();
 				_setstack.setCount(64);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}

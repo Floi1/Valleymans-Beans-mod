@@ -2,30 +2,30 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    "678"
+    " a ",
+    "bcd",
+    "efg"
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:water_bucket"
     },
-    "3": {
+    "b": {
       "item": "minecraft:sunflower"
     },
-    "4": {
+    "c": {
       "item": "minecraft:white_wool"
     },
-    "5": {
+    "d": {
       "item": "minecraft:ice"
     },
-    "6": {
+    "e": {
       "item": "minecraft:redstone_block"
     },
-    "7": {
+    "f": {
       "tag": "minecraft:dirt"
     },
-    "8": {
+    "g": {
       "item": "minecraft:emerald"
     }
   },

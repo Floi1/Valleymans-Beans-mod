@@ -2,37 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "aba",
+    "aaa"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "valleyman_beans:beanswip"
     },
-    "1": {
-      "item": "valleyman_beans:beanswip"
-    },
-    "2": {
-      "item": "valleyman_beans:beanswip"
-    },
-    "3": {
-      "item": "valleyman_beans:beanswip"
-    },
-    "4": {
+    "b": {
       "item": "minecraft:chest"
-    },
-    "5": {
-      "item": "valleyman_beans:beanswip"
-    },
-    "6": {
-      "item": "valleyman_beans:beanswip"
-    },
-    "7": {
-      "item": "valleyman_beans:beanswip"
-    },
-    "8": {
-      "item": "valleyman_beans:beanswip"
     }
   },
   "result": {

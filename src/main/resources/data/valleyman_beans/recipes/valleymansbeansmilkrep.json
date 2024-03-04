@@ -2,37 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "aaa",
+    "aca"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:milk_bucket"
     },
-    "1": {
+    "b": {
       "item": "minecraft:water_bucket"
     },
-    "2": {
-      "item": "minecraft:milk_bucket"
-    },
-    "3": {
-      "item": "minecraft:milk_bucket"
-    },
-    "4": {
-      "item": "minecraft:milk_bucket"
-    },
-    "5": {
-      "item": "minecraft:milk_bucket"
-    },
-    "6": {
-      "item": "minecraft:milk_bucket"
-    },
-    "7": {
+    "c": {
       "tag": "minecraft:dirt"
-    },
-    "8": {
-      "item": "minecraft:milk_bucket"
     }
   },
   "result": {

@@ -2,21 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1",
-    " 3",
-    "45"
+    " a",
+    " b",
+    "cd"
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:water_bucket"
     },
-    "3": {
+    "b": {
       "item": "minecraft:lava_bucket"
     },
-    "4": {
+    "c": {
       "item": "minecraft:beetroot"
     },
-    "5": {
+    "d": {
       "tag": "minecraft:dirt"
     }
   },

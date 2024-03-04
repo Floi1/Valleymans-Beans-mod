@@ -2,18 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0",
-    "1",
-    "2"
+    "a",
+    "a",
+    "b"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "valleyman_beans:beanswip"
     },
-    "1": {
-      "item": "valleyman_beans:beanswip"
-    },
-    "2": {
+    "b": {
       "item": "minecraft:stick"
     }
   },

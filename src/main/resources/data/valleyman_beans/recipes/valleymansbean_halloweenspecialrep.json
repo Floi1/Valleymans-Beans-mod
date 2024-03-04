@@ -2,25 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    " 4 ",
-    "678"
+    " a ",
+    " b ",
+    "aca"
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:bone"
     },
-    "4": {
+    "b": {
       "item": "valleyman_beans:beanswip"
     },
-    "6": {
-      "item": "minecraft:bone"
-    },
-    "7": {
+    "c": {
       "item": "minecraft:spider_eye"
-    },
-    "8": {
-      "item": "minecraft:bone"
     }
   },
   "result": {

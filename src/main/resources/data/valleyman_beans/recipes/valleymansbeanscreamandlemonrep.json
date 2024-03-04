@@ -2,31 +2,25 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    "678"
+    " a ",
+    "bcb",
+    "ded"
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:water_bucket"
     },
-    "3": {
+    "b": {
       "item": "minecraft:wheat"
     },
-    "4": {
+    "c": {
       "item": "minecraft:sunflower"
     },
-    "5": {
-      "item": "minecraft:wheat"
-    },
-    "6": {
+    "d": {
       "item": "minecraft:gold_nugget"
     },
-    "7": {
+    "e": {
       "tag": "minecraft:dirt"
-    },
-    "8": {
-      "item": "minecraft:gold_nugget"
     }
   },
   "result": {

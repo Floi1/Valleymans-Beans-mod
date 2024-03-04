@@ -2,24 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "bcb",
+    " d "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "minecraft:water_bucket"
     },
-    "3": {
+    "b": {
       "item": "minecraft:bone"
     },
-    "4": {
+    "c": {
       "item": "minecraft:cod"
     },
-    "5": {
-      "item": "minecraft:bone"
-    },
-    "7": {
+    "d": {
       "tag": "minecraft:dirt"
     }
   },

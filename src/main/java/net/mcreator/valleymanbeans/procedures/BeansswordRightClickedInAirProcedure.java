@@ -1,6 +1,6 @@
 package net.mcreator.valleymanbeans.procedures;
 
-import net.minecraftforge.items.ItemHandlerHelper;
+import net.neoforged.neoforge.items.ItemHandlerHelper;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -17,22 +17,22 @@ public class BeansswordRightClickedInAirProcedure {
 		if (entity instanceof Player _player)
 			_player.giveExperiencePoints(16937);
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(Items.ENDER_EYE);
+			ItemStack _setstack = new ItemStack(Items.ENDER_EYE).copy();
 			_setstack.setCount(12);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(Blocks.WITHER_SKELETON_SKULL);
+			ItemStack _setstack = new ItemStack(Blocks.WITHER_SKELETON_SKULL).copy();
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(Items.TOTEM_OF_UNDYING);
+			ItemStack _setstack = new ItemStack(Items.TOTEM_OF_UNDYING).copy();
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(Blocks.HAY_BLOCK);
+			ItemStack _setstack = new ItemStack(Blocks.HAY_BLOCK).copy();
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
