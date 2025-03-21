@@ -18,7 +18,7 @@ description="beans"
 [[dependencies.valleyman_beans]]
     modId="neoforge"
     type="required"
-    versionRange="[21.4.78-beta,)"
+    versionRange="[21.4.101-beta,)"
     ordering="AFTER"
     side="BOTH"
 
