@@ -1,0 +1,22 @@
+{
+  "_fv": 77,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Valleyman beans potion",
+    "splashName": "Splash Valleyman beans potion",
+    "lingeringName": "Lingering Valleyman beans potion",
+    "arrowName": "Arrow of Valleyman beans potion",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Valleymanbeanspoition"
+        },
+        "duration": 3600,
+        "infinite": false,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

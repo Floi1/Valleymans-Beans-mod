@@ -1,0 +1,58 @@
+{
+  "_fv": 77,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "bea_5",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "Valleymans beans avocado & chocolate chips (dont eat this near your base)",
+    "rarity": "UNCOMMON",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Beans"
+      }
+    ],
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 16,
+    "toolType": 0.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "Valleymans beans avocado and chocolate chips (dont eat this near your base)"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "ValleymansbeansavocadoandchocolatechipsFoodEaten"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectileDisableAmmoCheck": false,
+    "isFood": true,
+    "nutritionalValue": -10,
+    "saturation": -5.0,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
+  }
+}

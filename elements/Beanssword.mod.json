@@ -1,0 +1,41 @@
+{
+  "_fv": 77,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "beansword",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Beans sword",
+    "specialInformation": {
+      "fixedValue": [
+        "Sword"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "efficiency": 20.0,
+    "attackSpeed": 4.0,
+    "enchantability": 30,
+    "damageVsEntity": 1.0,
+    "usageCount": 10000,
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Beanswip"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

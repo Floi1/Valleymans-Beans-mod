@@ -1,0 +1,24 @@
+{
+  "_fv": 77,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Valleyman beans potion",
+    "icon": "untitled_design_-_2023-10-24t135952.539.png",
+    "color": {
+      "value": -256,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": {
+      "name": "ValleymanbeanspoitionPotionStartedapplied"
+    },
+    "onExpired": {
+      "name": "ValleymanbeanspoitionPotionExpires"
+    }
+  }
+}

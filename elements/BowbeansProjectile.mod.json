@@ -1,0 +1,21 @@
+{
+  "_fv": 77,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Valleymansbeanspremiumdihydrogenmonoxide"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": true,
+    "power": 30.0,
+    "damage": 30.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5
+  }
+}

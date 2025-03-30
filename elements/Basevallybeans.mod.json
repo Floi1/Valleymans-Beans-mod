@@ -1,0 +1,15 @@
+{
+  "_fv": 77,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "CUSTOM:Beanswip"
+    },
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 16.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
+  }
+}
