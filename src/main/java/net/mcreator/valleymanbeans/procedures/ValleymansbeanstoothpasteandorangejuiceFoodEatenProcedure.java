@@ -13,7 +13,7 @@ public class ValleymansbeanstoothpasteandorangejuiceFoodEatenProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 360, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 360, 1, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 360, 1, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

@@ -10,7 +10,7 @@ public class ValleymansbeansgreenteakitkatandwagyubeeftallowFoodEatenProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 600, 111, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.INSTANT_HEALTH, 600, 111, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 60, 111, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

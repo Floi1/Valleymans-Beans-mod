@@ -62,7 +62,7 @@ public class ValleymansbeanssourgummywormsFoodEatenProcedure {
 		for (int index1 = 0; index1 < 15; index1++) {
 			if (world instanceof ServerLevel _level) {
 				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
+				entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
 				_level.addFreshEntity(entityToSpawn);
 			}
 		}
@@ -73,21 +73,21 @@ public class ValleymansbeanssourgummywormsFoodEatenProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 111, false, true));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 600, 111, false, true));
+			_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 600, 111, false, true));
+			_entity.addEffect(new MobEffectInstance(MobEffects.JUMP_BOOST, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 111, false, true));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 111, false, true));
+			_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

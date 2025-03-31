@@ -6,6 +6,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ProjectileWeaponItem;
@@ -23,7 +24,7 @@ import net.minecraft.network.chat.Component;
 
 import net.mcreator.valleymanbeans.entity.BowbeansProjectileEntity;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 public class BowbeansItem extends Item {
 	public BowbeansItem(Item.Properties properties) {
@@ -53,9 +54,9 @@ public class BowbeansItem extends Item {
 
 	@Override
 	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.valleyman_beans.bowbeans.description_0"));
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay display, Consumer<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, display, list, flag);
+		list.accept(Component.translatable("item.valleyman_beans.bowbeans.description_0"));
 	}
 
 	@Override
@@ -94,11 +95,10 @@ public class BowbeansItem extends Item {
 	private ItemStack findAmmo(Player player) {
 		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == BowbeansProjectileEntity.PROJECTILE_ITEM.getItem());
 		if (stack == ItemStack.EMPTY) {
-			for (int i = 0; i < player.getInventory().items.size(); i++) {
-				ItemStack teststack = player.getInventory().items.get(i);
-				if (teststack != null && teststack.getItem() == BowbeansProjectileEntity.PROJECTILE_ITEM.getItem()) {
-					stack = teststack;
-					break;
+		 {
+				
+			 {
+				
 				}
 			}
 		}

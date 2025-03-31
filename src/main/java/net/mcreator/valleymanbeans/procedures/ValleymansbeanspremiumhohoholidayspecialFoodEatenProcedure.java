@@ -10,13 +10,13 @@ public class ValleymansbeanspremiumhohoholidayspecialFoodEatenProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 3000, 11));
+			_entity.addEffect(new MobEffectInstance(MobEffects.INSTANT_HEALTH, 3000, 11));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 3000, 11));
+			_entity.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 3000, 11));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 3000, 11));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 3000, 4));
+			_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 3000, 4));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 3000, 11));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

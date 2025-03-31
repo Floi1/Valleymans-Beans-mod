@@ -89,10 +89,10 @@ public class ValleymansbeansCubancigarsmokedFoodEatenProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 600, 3, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 600, 3, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 600, 3, false, false));
 		if (world instanceof ServerLevel _level) {
 			LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
-			entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
+			entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
 			entityToSpawn.setVisualOnly(true);
 			_level.addFreshEntity(entityToSpawn);
 		}

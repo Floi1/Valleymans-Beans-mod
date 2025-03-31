@@ -25,6 +25,6 @@ public class ValleymansbeansmilkFoodEatenProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 900, 11));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 900, 3));
+			_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 900, 3));
 	}
 }

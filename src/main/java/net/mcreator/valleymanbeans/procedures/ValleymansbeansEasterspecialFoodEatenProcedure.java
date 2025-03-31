@@ -17,15 +17,15 @@ public class ValleymansbeansEasterspecialFoodEatenProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1200, 12, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1200, 2, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 1200, 2, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1200, 2, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 1200, 2, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 1200, 4, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.JUMP_BOOST, 1200, 4, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 4, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 1200, 4, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1200, 2, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

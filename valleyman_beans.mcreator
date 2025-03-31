@@ -1282,7 +1282,7 @@
       "name": "BeansTIsword",
       "type": "tool",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "beans_t_isword",
       "metadata": {
         "files": [
@@ -1897,7 +1897,7 @@
       "name": "Bowbeans",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "bowbeans",
       "metadata": {
         "files": [
@@ -2513,7 +2513,7 @@
   "workspaceSettings": {
     "modid": "valleyman_beans",
     "modName": "valleyman beans",
-    "version": "11.9.1",
+    "version": "12.9.1",
     "description": "beans",
     "author": "Floi",
     "websiteURL": "https://www.curseforge.com/minecraft/search?page\u003d1\u0026pageSize\u003d20\u0026sortType\u003d1\u0026class\u003dmc-mods",
@@ -2524,7 +2524,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "neoforge-1.21.4",
+    "currentGenerator": "neoforge-1.21.5",
     "credits": "floi",
     "modElementsPackage": "net.mcreator.valleymanbeans"
   },

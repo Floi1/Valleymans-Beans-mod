@@ -6,6 +6,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -16,7 +17,7 @@ import net.minecraft.network.chat.Component;
 
 import net.mcreator.valleymanbeans.procedures.ValleymansbeanssourgummywormsFoodEatenProcedure;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 public class ValleymansbeanssourgummywormsItem extends Item {
 	public ValleymansbeanssourgummywormsItem(Item.Properties properties) {
@@ -30,9 +31,9 @@ public class ValleymansbeanssourgummywormsItem extends Item {
 
 	@Override
 	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.valleyman_beans.valleymansbeanssourgummyworms.description_0"));
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay display, Consumer<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, display, list, flag);
+		list.accept(Component.translatable("item.valleyman_beans.valleymansbeanssourgummyworms.description_0"));
 	}
 
 	@Override

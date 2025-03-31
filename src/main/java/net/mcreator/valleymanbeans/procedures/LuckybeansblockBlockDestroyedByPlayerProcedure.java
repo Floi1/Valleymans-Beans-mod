@@ -156,7 +156,7 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 			for (int index1 = 0; index1 < 15; index1++) {
 				if (world instanceof ServerLevel _level) {
 					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
-					entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
+					entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}

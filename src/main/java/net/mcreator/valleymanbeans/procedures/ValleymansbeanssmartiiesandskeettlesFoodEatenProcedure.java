@@ -18,7 +18,7 @@ public class ValleymansbeanssmartiiesandskeettlesFoodEatenProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 3000, 1, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 3000, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 3000, 1, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 3000, 1, false, false));
 		if (Math.random() <= 0.1) {

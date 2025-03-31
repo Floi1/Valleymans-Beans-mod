@@ -10,11 +10,11 @@ public class ValleymanbeanspoitionPotionStartedappliedProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 6000, 11));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 6000, 11));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 6000, 11));
+			_entity.addEffect(new MobEffectInstance(MobEffects.MINING_FATIGUE, 6000, 11));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 6000, 11));
+			_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 6000, 11));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 6000, 11));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

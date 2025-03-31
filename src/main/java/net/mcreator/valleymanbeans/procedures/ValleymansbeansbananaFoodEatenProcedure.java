@@ -10,7 +10,7 @@ public class ValleymansbeansbananaFoodEatenProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 1200, 20, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.HASTE, 1200, 20, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1200, 10, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

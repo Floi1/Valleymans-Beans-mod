@@ -10,15 +10,15 @@ public class ValleymansbeansBraziliansushiFoodEatenProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 600, 12, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.MINING_FATIGUE, 600, 12, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 12, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 600, 12, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 600, 12, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 600, 12, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 320, 12, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 320, 12, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 550, 12, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

@@ -25,7 +25,7 @@ public class ValleymansbeansseasonedcheeseFoodEatenProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 1200, 11));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1200, 3));
+			_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 1200, 3));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1200, 25));
 	}

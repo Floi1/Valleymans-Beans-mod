@@ -14,12 +14,12 @@ public class BeanswipFoodEatenProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 111, false, true));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 600, 111, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 600, 111, false, true));
+			_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 600, 111, false, true));
 	}
 }

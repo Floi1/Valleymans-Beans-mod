@@ -15,7 +15,7 @@ public class ValleymansbeansmilkdurianFoodEatenProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 1200, 22, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 1200, 22, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 1200, 22, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

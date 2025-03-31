@@ -16,10 +16,10 @@ public class ValleymansbeansexoticmeatsFoodEatenProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 620, 100));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 620, 100));
+			_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 620, 100));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 620, 100));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 310, 100));
+			_entity.addEffect(new MobEffectInstance(MobEffects.MINING_FATIGUE, 310, 100));
 	}
 }
