@@ -35,7 +35,7 @@ public class BeansTIswordItem extends Item {
 		list.accept(Component.translatable("item.valleyman_beans.beans_t_isword.description_0"));
 	}
 
-
+	
 	public void onCraftedBy(ItemStack itemstack, Level world, Player entity) {
 		BeansswordRightClickedInAirProcedure.execute(world, itemstack);
 	}
