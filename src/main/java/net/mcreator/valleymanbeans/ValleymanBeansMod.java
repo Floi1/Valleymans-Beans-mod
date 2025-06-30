@@ -25,12 +25,8 @@ import net.mcreator.valleymanbeans.init.ValleymanBeansModItems;
 import net.mcreator.valleymanbeans.init.ValleymanBeansModEntities;
 import net.mcreator.valleymanbeans.init.ValleymanBeansModBlocks;
 
+import java.util.*;
 import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.Map;
-import java.util.List;
-import java.util.HashMap;
-import java.util.Collection;
-import java.util.ArrayList;
 
 @Mod("valleyman_beans")
 public class ValleymanBeansMod {
@@ -59,9 +55,10 @@ public class ValleymanBeansMod {
 	// Start of user code block mod methods
 	// End of user code block mod methods
 	private static boolean networkingRegistered = false;
-	private static final Map<CustomPacketPayload.Type<?>, NetworkMessage<?>> MESSAGES = new HashMap<>();
+	private static final Map<CustomPacketPayload.Type<?>, NetworkMessage<?>> MESSAGES = Collections.unmodifiableMap(new HashMap<>());
 
-	private record NetworkMessage<T extends CustomPacketPayload>(StreamCodec<? extends FriendlyByteBuf, T> reader, IPayloadHandler<T> handler) {
+	private record NetworkMessage<T extends CustomPacketPayload>(StreamCodec<? extends FriendlyByteBuf, T> reader,
+																 IPayloadHandler<T> handler) {
 	}
 
 	public static <T extends CustomPacketPayload> void addNetworkMessage(CustomPacketPayload.Type<T> id, StreamCodec<? extends FriendlyByteBuf, T> reader, IPayloadHandler<T> handler) {

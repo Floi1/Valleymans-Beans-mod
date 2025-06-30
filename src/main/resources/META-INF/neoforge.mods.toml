@@ -4,7 +4,7 @@ license="Apache License version 2.0"
 
 [[mods]]
 modId="valleyman_beans"
-version="12.9.1"
+version="13.9.1"
 displayName="valleyman beans"
 displayURL="https://www.curseforge.com/minecraft/search?page=1&pageSize=20&sortType=1&class=mc-mods"
 logoFile="logo.png"
@@ -18,14 +18,14 @@ description="beans"
 [[dependencies.valleyman_beans]]
     modId="neoforge"
     type="required"
-    versionRange="[21.5.58-beta,)"
+    versionRange="[21.6.20-beta,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.valleyman_beans]]
     modId="minecraft"
     type="required"
-    versionRange="[1.21.5]"
+    versionRange="[1.21.6]"
     ordering="AFTER"
     side="BOTH"
 

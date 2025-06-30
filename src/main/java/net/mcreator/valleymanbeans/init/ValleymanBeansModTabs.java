@@ -18,7 +18,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.valleymanbeans.ValleymanBeansMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber()
 public class ValleymanBeansModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ValleymanBeansMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BEANS = REGISTRY.register("beans",

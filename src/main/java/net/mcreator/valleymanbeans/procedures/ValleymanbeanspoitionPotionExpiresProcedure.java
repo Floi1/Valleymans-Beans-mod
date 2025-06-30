@@ -34,7 +34,7 @@ public class ValleymanbeanspoitionPotionExpiresProcedure {
 		if (entity instanceof Player _player)
 			_player.giveExperiencePoints(1000000);
 		if (entity instanceof ServerPlayer _player) {
-			AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("valleyman_beans:whyjustwhy"));
+			AdvancementHolder _adv = _player.getServer().getAdvancements().get(ResourceLocation.parse("valleyman_beans:whyjustwhy"));
 			if (_adv != null) {
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 				if (!_ap.isDone()) {
