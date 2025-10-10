@@ -1,0 +1,25 @@
+{
+  "_fv": 18,
+  "_type": "potion",
+  "definition": {
+    "name": "Valleyman beans potion",
+    "effectName": "Valleyman beans potion",
+    "icon": "untitled_design_-_2023-10-24t135952.539.png",
+    "color": {
+      "value": -256,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": true,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "ValleymanbeanspoitionPotionStartedapplied"
+    },
+    "onExpired": {
+      "name": "ValleymanbeanspoitionPotionExpires"
+    }
+  }
+}

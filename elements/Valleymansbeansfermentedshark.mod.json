@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "bea",
+    "customModelName": "Normal",
+    "name": "Valleymans beans fermented shark",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Valleymans beans fermented shark"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Beans"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "ValleymansbeansfermentedsharkFoodEaten"
+    }
+  }
+}

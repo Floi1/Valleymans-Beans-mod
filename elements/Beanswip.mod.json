@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "untitled_design_53",
+    "customModelName": "Normal",
+    "name": "valleyman's beans",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "valleymanbeans"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Beans"
+    },
+    "stackSize": 64,
+    "nutritionalValue": -11,
+    "saturation": -1.7000000000000002,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "BeanswipFoodEaten"
+    }
+  }
+}

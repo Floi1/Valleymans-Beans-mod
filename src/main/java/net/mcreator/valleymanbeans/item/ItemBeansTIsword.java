@@ -38,7 +38,7 @@ public class ItemBeansTIsword extends ElementsValleymanBeansMod.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("BEANS_T_ISWORD", 4, 10000, 20f, 60f, 30)) {
+		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("BEANS_T_ISWORD", 14, 10000, 120f, 8f, 130)) {
 			@Override
 			public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot slot) {
 				Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);
@@ -53,7 +53,7 @@ public class ItemBeansTIsword extends ElementsValleymanBeansMod.ModElement {
 
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("sword", 4);
+				ret.put("sword", 14);
 				return ret.keySet();
 			}
 
@@ -65,7 +65,6 @@ public class ItemBeansTIsword extends ElementsValleymanBeansMod.ModElement {
 				int z = (int) entity.posZ;
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
 					$_dependencies.put("itemstack", itemstack);
 					ProcedureBeansswordRightClickedInAir.executeProcedure($_dependencies);
 				}

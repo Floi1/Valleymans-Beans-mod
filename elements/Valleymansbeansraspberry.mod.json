@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "untitled_design_64",
+    "customModelName": "Normal",
+    "name": "Valleymans beans raspberry",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Valleymans beans raspberry"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Beans"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 1,
+    "saturation": 1.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": true,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "ValleymansbeansraspberryFoodEaten"
+    }
+  }
+}

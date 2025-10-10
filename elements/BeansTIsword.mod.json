@@ -1,0 +1,36 @@
+{
+  "_fv": 18,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "beanti2",
+    "customModelName": "Normal",
+    "name": "Beans ti sword",
+    "specialInfo": [
+      "Sword"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 14,
+    "efficiency": 120.0,
+    "attackSpeed": 5.0,
+    "enchantability": 130,
+    "damageVsEntity": 12.0,
+    "usageCount": 10000,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Beanswip"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onCrafted": {
+      "name": "BeansswordRightClickedInAir"
+    }
+  }
+}

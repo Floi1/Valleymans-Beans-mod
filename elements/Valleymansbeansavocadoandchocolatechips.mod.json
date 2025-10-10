@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "bea_5",
+    "customModelName": "Normal",
+    "name": "Valleymans beans avocado & chocolate chips (dont eat this near your base)",
+    "rarity": "UNCOMMON",
+    "specialInfo": [
+      "Valleymans beans avocado and chocolate chips (dont eat this near your base)"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Beans"
+    },
+    "stackSize": 64,
+    "nutritionalValue": -10,
+    "saturation": -5.0,
+    "eatingSpeed": 16,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "ValleymansbeansavocadoandchocolatechipsFoodEaten"
+    }
+  }
+}

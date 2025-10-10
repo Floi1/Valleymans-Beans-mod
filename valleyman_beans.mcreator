@@ -1,0 +1,2178 @@
+{
+  "id_map": {
+    "ENTITY": 3
+  },
+  "mod_elements": [
+    {
+      "name": "BeanswipFoodEaten",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beanswip_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Beanswip",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beanswip"
+    },
+    {
+      "name": "Basebeans",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "basebeans"
+    },
+    {
+      "name": "ValleymansbeansclassicradiummintFoodEaten",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansclassicradiummint_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansclassicradiummint",
+      "type": "food",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansclassicradiummint"
+    },
+    {
+      "name": "Mintgodzillaone",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mintgodzillaone"
+    },
+    {
+      "name": "Valleymansbeanspremium",
+      "type": "food",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanspremium"
+    },
+    {
+      "name": "ValleymansbeanspremiumFoodEaten",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanspremium_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Beanspremium",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beanspremium"
+    },
+    {
+      "name": "ValleymansbeansextradietFoodEaten",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansextradiet_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansextradiet",
+      "type": "food",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansextradiet"
+    },
+    {
+      "name": "Valleymansbeansdiet",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansdiet"
+    },
+    {
+      "name": "ValleymansbeanssmokedonionsFoodEaten",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanssmokedonions_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeanssmokedonions",
+      "type": "food",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanssmokedonions"
+    },
+    {
+      "name": "Valleymanbeansonions",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymanbeansonions"
+    },
+    {
+      "name": "ValleymansbeansdreamfishFoodEaten",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansdreamfish_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansdreamfish",
+      "type": "food",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansdreamfish"
+    },
+    {
+      "name": "Valleymansreamfish",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansreamfish"
+    },
+    {
+      "name": "Valleymansbeanspremiumhohoholidayspecial",
+      "type": "food",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanspremiumhohoholidayspecial"
+    },
+    {
+      "name": "ValleymansbeanspremiumhohoholidayspecialFoodEaten",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanspremiumhohoholidayspecial_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hohoholidayspecialone",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hohoholidayspecialone"
+    },
+    {
+      "name": "ValleymansbeansStPatricksDay",
+      "type": "food",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_st_patricks_day"
+    },
+    {
+      "name": "ValleymansbeansStPatricksDayFoodEaten",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_st_patricks_day_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StPatricksDayone",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "st_patricks_dayone"
+    },
+    {
+      "name": "Valleymansbeansthattaste",
+      "type": "food",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansthattaste"
+    },
+    {
+      "name": "Valleymansbeansthattasteone",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansthattasteone",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Thattasteone",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thattasteone"
+    },
+    {
+      "name": "ValleymansbeansblueberryjamFoodEaten",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansblueberryjam_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansblueberryjam",
+      "type": "food",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansblueberryjam"
+    },
+    {
+      "name": "Blueberryjamone",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueberryjamone"
+    },
+    {
+      "name": "ValleymansbeansraspberryFoodEaten",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansraspberry_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansraspberry",
+      "type": "food",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansraspberry"
+    },
+    {
+      "name": "Beansraspberryone",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beansraspberryone"
+    },
+    {
+      "name": "Valleymansbeanspremiumdihydrogenmonoxide",
+      "type": "food",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanspremiumdihydrogenmonoxide"
+    },
+    {
+      "name": "ValleymansbeanspremiumdihydrogenmonoxideFoodEaten",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanspremiumdihydrogenmonoxide_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Premiumdihydrogenmonoxideone",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "premiumdihydrogenmonoxideone"
+    },
+    {
+      "name": "Beans",
+      "type": "tab",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beans"
+    },
+    {
+      "name": "ValleymansbeanspremiumdihydrogenmonoxideEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanspremiumdihydrogenmonoxide_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValleymansbeansAustraliadefinitiveeditionFoodEaten",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_australiadefinitiveedition_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValleymansbeansAustraliadefinitiveedition",
+      "type": "food",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_australiadefinitiveedition"
+    },
+    {
+      "name": "Australiadefinitiveedition",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "australiadefinitiveedition"
+    },
+    {
+      "name": "ValleymansbeansSeafoodpizzaandchocomilkFoodEaten",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_seafoodpizzaandchocomilk_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValleymansbeansSeafoodpizzaandchocomilk",
+      "type": "food",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_seafoodpizzaandchocomilk"
+    },
+    {
+      "name": "Seafoodpizzaandchocomilkone",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seafoodpizzaandchocomilkone"
+    },
+    {
+      "name": "ValleymansbeansBlackteaandsoysauce",
+      "type": "food",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_blackteaandsoysauce"
+    },
+    {
+      "name": "ValleymansbeansBlackteaandsoysauceFoodEaten",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_blackteaandsoysauce_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blackteaandsoysauceone",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blackteaandsoysauceone"
+    },
+    {
+      "name": "ValleymansbeansappleandtangerineFoodEaten",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansappleandtangerine_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansappleandtangerine",
+      "type": "food",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansappleandtangerine"
+    },
+    {
+      "name": "Valleymansbeansappleandtangerineone",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansappleandtangerineone"
+    },
+    {
+      "name": "ValleymansbeansexoticmeatsFoodEaten",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansexoticmeats_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansexoticmeats",
+      "type": "food",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansexoticmeats"
+    },
+    {
+      "name": "Valleymansbeansexoticmeatsrep",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansexoticmeatsrep"
+    },
+    {
+      "name": "Thebean",
+      "type": "achievement",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thebean"
+    },
+    {
+      "name": "ValleymansbeansCubancigarsmokedFoodEaten",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_cubancigarsmoked_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValleymansbeansCubancigarsmoked",
+      "type": "food",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_cubancigarsmoked"
+    },
+    {
+      "name": "ValleymansbeansCubancigarsmokedrep",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_cubancigarsmokedrep"
+    },
+    {
+      "name": "ValleymansbeansbananaFoodEaten",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansbanana_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansbanana",
+      "type": "food",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansbanana"
+    },
+    {
+      "name": "Valleymansbeansbananarep",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansbananarep"
+    },
+    {
+      "name": "ValleymansbeansBraziliansushiFoodEaten",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_braziliansushi_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValleymansbeansBraziliansushi",
+      "type": "food",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_braziliansushi"
+    },
+    {
+      "name": "ValleymansbeansBraziliansushirep",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_braziliansushirep"
+    },
+    {
+      "name": "ValleymansbeanscherryFoodEaten",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscherry_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeanscherry",
+      "type": "food",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscherry"
+    },
+    {
+      "name": "Valleymansbeanscherryrep",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscherryrep"
+    },
+    {
+      "name": "ValleymansbeansextraspicyraisinsFoodEaten",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansextraspicyraisins_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansextraspicyraisins",
+      "type": "food",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansextraspicyraisins"
+    },
+    {
+      "name": "Valleymansbeansaustraliadefinitiveeditionrep",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansaustraliadefinitiveeditionrep"
+    },
+    {
+      "name": "ValleymansbeansfermentedsharkFoodEaten",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansfermentedshark_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansfermentedshark",
+      "type": "food",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansfermentedshark"
+    },
+    {
+      "name": "Valleymansbeansfermentedsharkrep",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansfermentedsharkrep"
+    },
+    {
+      "name": "ValleymansbeansmilkdurianFoodEaten",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansmilkdurian_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansmilkdurian",
+      "type": "food",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansmilkdurian"
+    },
+    {
+      "name": "Valleymansbeansmilkdurianrep",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansmilkdurianrep"
+    },
+    {
+      "name": "ValleymansbeanscokeandliquidcheeseFoodEaten",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscokeandliquidcheese_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeanscokeandliquidcheese",
+      "type": "food",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscokeandliquidcheese"
+    },
+    {
+      "name": "Valleymansbeanscokeandliquidcheeserep",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscokeandliquidcheeserep"
+    },
+    {
+      "name": "Valleymanbeanspoition",
+      "type": "potion",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleyman_beans_poition"
+    },
+    {
+      "name": "ValleymanbeanspoitionPotionStartedapplied",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymanbeanspoition_potion_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValleymanbeanspoitionPotionExpires",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymanbeanspoition_potion_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Whyjustwhy",
+      "type": "achievement",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whyjustwhy"
+    },
+    {
+      "name": "Valleymansbeansaustralia",
+      "type": "food",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansaustralia"
+    },
+    {
+      "name": "Valleymansbeansaustraliarep",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansaustraliarep"
+    },
+    {
+      "name": "ValleymansbeansavocadoandchocolatechipsFoodEaten",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansavocadoandchocolatechips_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansavocadoandchocolatechips",
+      "type": "food",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansavocadoandchocolatechips"
+    },
+    {
+      "name": "Valleymansbeanscokeandliquidcheesefoodeatenrep",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscokeandliquidcheesefoodeatenrep"
+    },
+    {
+      "name": "ValleymansbeanssmartiiesandskeettlesFoodEaten",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanssmartiiesandskeettles_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeanssmartiiesandskeettles",
+      "type": "food",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanssmartiiesandskeettles"
+    },
+    {
+      "name": "Valleymansbeanssmartiiesandskeettlesrep",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanssmartiiesandskeettlesrep"
+    },
+    {
+      "name": "ValleymansbeansgreenteakitkatandwagyubeeftallowFoodEaten",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansgreenteakitkatandwagyubeeftallow_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansgreenteakitkatandwagyubeeftallow",
+      "type": "food",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansgreenteakitkatandwagyubeeftallow"
+    },
+    {
+      "name": "Valleymansbeansgreenteakitkatandwagyubeeftallowrep",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansgreenteakitkatandwagyubeeftallowrep"
+    },
+    {
+      "name": "Nicebean",
+      "type": "achievement",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nicebean"
+    },
+    {
+      "name": "Valleymansbeanssourgummyworms",
+      "type": "food",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanssourgummyworms"
+    },
+    {
+      "name": "ValleymansbeanssourgummywormsFoodEaten",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanssourgummyworms_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeanssourgummywormsrep",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanssourgummywormsrep"
+    },
+    {
+      "name": "Valleymansbeansmilk",
+      "type": "food",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansmilk"
+    },
+    {
+      "name": "ValleymansbeansmilkFoodEaten",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansmilk_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansmilkrep",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansmilkrep"
+    },
+    {
+      "name": "ValleymansbeansmintandlicoriceFoodEaten",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansmintandlicorice_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansmintandlicorice",
+      "type": "food",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansmintandlicorice"
+    },
+    {
+      "name": "Valleymansbeansmintandlicoricerep",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansmintandlicoricerep"
+    },
+    {
+      "name": "ValleymansbeanscottoncandyFoodEaten",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscottoncandy_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeanscottoncandy",
+      "type": "food",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscottoncandy"
+    },
+    {
+      "name": "Valleymansbeanscottoncandyrep",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscottoncandyrep"
+    },
+    {
+      "name": "Beansswordrep",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beansswordrep"
+    },
+    {
+      "name": "BeansswordRightClickedInAir",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beanssword_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Beanssword",
+      "type": "tool",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beanssword"
+    },
+    {
+      "name": "BeansTIsword",
+      "type": "tool",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beans_t_isword"
+    },
+    {
+      "name": "BeansTIswordrep",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beans_t_iswordrep"
+    },
+    {
+      "name": "LuckybeansblockBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "luckybeansblock_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Luckybeansblock",
+      "type": "block",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "luckybeansblock"
+    },
+    {
+      "name": "Luckybeansblockrep",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "luckybeansblockrep"
+    },
+    {
+      "name": "ValleymansbeanstoothpasteandorangejuiceFoodEaten",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanstoothpasteandorangejuice_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeanstoothpasteandorangejuice",
+      "type": "food",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanstoothpasteandorangejuice"
+    },
+    {
+      "name": "Valleymansbeanstoothpasteandorangejuicerep",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanstoothpasteandorangejuicerep"
+    },
+    {
+      "name": "Valleymansbeanscreamandlemon",
+      "type": "food",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscreamandlemon"
+    },
+    {
+      "name": "ValleymansbeanscreamandlemonFoodEaten",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscreamandlemon_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeanscreamandlemonrep",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanscreamandlemonrep"
+    },
+    {
+      "name": "Valleymansbeansseasonedcheese",
+      "type": "food",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansseasonedcheese"
+    },
+    {
+      "name": "ValleymansbeansseasonedcheeseFoodEaten",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansseasonedcheese_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansseasonedcheeserep",
+      "type": "recipe",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansseasonedcheeserep"
+    },
+    {
+      "name": "Valleymansbeansstrawberryandchocolate",
+      "type": "food",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansstrawberryandchocolate"
+    },
+    {
+      "name": "ValleymansbeansstrawberryandchocolateFoodEaten",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansstrawberryandchocolate_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansstrawberryandchocolaterep",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansstrawberryandchocolaterep"
+    },
+    {
+      "name": "ValleymansbeanChristmas2023FoodEaten",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbean_christmas_2023_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValleymansbeanChristmas2023",
+      "type": "food",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbean_christmas_2023"
+    },
+    {
+      "name": "Beans2023",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beans_2023"
+    },
+    {
+      "name": "ValleymansbeansVeteransDayspecialFoodEaten",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_veterans_dayspecial_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValleymansbeansVeteransDayspecial",
+      "type": "food",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_veterans_dayspecial"
+    },
+    {
+      "name": "ValleymansbeansVeteransDayspecialrep",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_veterans_dayspecialrep"
+    },
+    {
+      "name": "ValleymansbeansHalloweenspecialFoodEaten",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_halloweenspecial_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValleymansbeansHalloweenspecial",
+      "type": "food",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_halloweenspecial"
+    },
+    {
+      "name": "ValleymansbeanHalloweenspecialrep",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbean_halloweenspecialrep"
+    },
+    {
+      "name": "ValleymansbeansEasterspecialFoodEaten",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_easterspecial_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValleymansbeansEasterspecial",
+      "type": "food",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeans_easterspecial"
+    },
+    {
+      "name": "Easterspecialrep",
+      "type": "recipe",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easterspecialrep"
+    },
+    {
+      "name": "Basevallybeans",
+      "type": "fuel",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "basevallybeans"
+    },
+    {
+      "name": "Valleymansbeansmashedpotatoandchocolate",
+      "type": "food",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansmashedpotatoandchocolate"
+    },
+    {
+      "name": "ValleymansbeansmashedpotatoandchocolateFoodEaten",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansmashedpotatoandchocolate_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansmashedpotatoandchocolatefoodeatenrep",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansmashedpotatoandchocolatefoodeatenrep"
+    },
+    {
+      "name": "Valleymansbeanssoutherndelightoriginal",
+      "type": "food",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanssoutherndelightoriginal"
+    },
+    {
+      "name": "Valleymansbeanssoutherndelightoriginalrep",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanssoutherndelightoriginalrep"
+    },
+    {
+      "name": "ValleymansbeanssoutherndelightoriginalFoodEaten",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeanssoutherndelightoriginal_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansrugbrauomeorjomaa",
+      "type": "food",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansrugbrauomeorjomaa"
+    },
+    {
+      "name": "ValleymansbeansrugbrauomeorjomaaFoodEaten",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansrugbrauomeorjomaa_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansrugbrauomeorjomaarep",
+      "type": "recipe",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansrugbrauomeorjomaarep"
+    },
+    {
+      "name": "ValleymansbeansrugbrauomeorjomaaItemIsCraftedsmelted",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansrugbrauomeorjomaa_item_is_craftedsmelted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valleymansbeansswampgumbo",
+      "type": "food",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansswampgumbo"
+    },
+    {
+      "name": "Valleymansbeansswampgumborep",
+      "type": "recipe",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansswampgumborep"
+    },
+    {
+      "name": "ValleymansbeansswampgumboFoodEaten",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valleymansbeansswampgumbo_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "tipped_arrow.effect.valleyman_beans_poition": "Arrow of Valleyman beans potion",
+      "item.valleymansbeansclassicradiummint.name": "Valleymans beans classic radium mint",
+      "item.valleymansbeanstoothpasteandorangejuice.name": "Valleymans beans toothpaste and orange juice",
+      "item.valleymansbeanscreamandlemon.name": "Valleymans beans cream and lemon",
+      "item.valleymansbeansrugbrauomeorjomaa.name": "Valleymans beans rúgbrauð með rjóma á (dont eat this near your base)",
+      "item.valleymansbeans_cubancigarsmoked.name": "Valleymans beans - Cuban cigar smoked",
+      "item.valleymansbeansaustralia.name": "Valleymans beans Australia",
+      "advancements.nicebean.title": "The beans",
+      "advancements.whyjustwhy.descr": "WHY JUST WHY",
+      "item.beanswip.name": "valleyman\u0027s beans",
+      "item.valleymansbeansblueberryjam.name": "Valleymans beans blueberry jam",
+      "advancements.nicebean.descr": "THE BEANS",
+      "item.valleymansbeans_veterans_dayspecial.name": "Valleymans beans Veterans Day special",
+      "item.valleymansbeansfermentedshark.name": "Valleymans beans fermented shark",
+      "item.valleymansbeanspremiumhohoholidayspecial.name": "Valleymans beans premium - hohoholiday special",
+      "item.valleymansbeanspremiumdihydrogenmonoxide.name": "Valleymans beans premium dihydrogen monoxide",
+      "item.valleymansbeansmilk.name": "Valleymans beans milk",
+      "item.valleymansbeansextradiet.name": "Valleymans beans extra diet",
+      "item.valleymansbeanssmokedonions.name": "Valleymans beans smoked onions",
+      "item.valleymansbeanscherry.name": "Valleymans beans cherry",
+      "item.valleymansbeansavocadoandchocolatechips.name": "Valleymans beans avocado \u0026 chocolate chips (dont eat this near your base)",
+      "item.valleymansbeansthattaste.name": "Valleymans beans that taste",
+      "splash_potion.effect.valleyman_beans_poition": "Splash Valleyman beans potion",
+      "potion.effect.valleyman_beans_poition": "Valleyman beans potion",
+      "item.valleymansbeansswampgumbo.name": "Valleymans beans swamp gumbo",
+      "item.valleymansbeansmintandlicorice.name": "Valleymans beans mint and licorice",
+      "item.valleymansbeansgreenteakitkatandwagyubeeftallow.name": "Valleymans beans green tea kitkat \u0026 wagyu beef tallow",
+      "item.valleymansbeans_australiadefinitiveedition.name": "Valleymans beans Australia definitive edition",
+      "item.beanssword.name": "Beans sword",
+      "item.valleymansbean_christmas_2023.name": "Valleymans bean Christmas 2023",
+      "item.valleymansbeans_braziliansushi.name": "Valleymans beans Brazilian sushi",
+      "advancements.thebean.descr": "THE BEANS",
+      "item.valleymansbeanscokeandliquidcheese.name": "Valleymans beans coke and liquid cheese",
+      "tile.luckybeansblock.name": "Lucky beans block (WIP)",
+      "item.valleymansbeansextraspicyraisins.name": "Valleymans beans extra spicy raisins",
+      "lingering_potion.effect.valleyman_beans_poition": "Lingering Valleyman beans potion",
+      "advancements.thebean.title": "The beans",
+      "item.valleymansbeans_easterspecial.name": "Valleymans beans - Easter special",
+      "item.valleymansbeansmashedpotatoandchocolate.name": "Valleymans beans - mashed potato and chocolate",
+      "item.beans_t_isword.name": "Beans ti sword",
+      "item.valleymansbeans_seafoodpizzaandchocomilk.name": "Valleymans beans - Seafood pizza and choco milk",
+      "item.valleymansbeans_halloweenspecial.name": "Valleymans beans - Halloween special",
+      "item.valleymansbeanscottoncandy.name": "Valleymans beans cotton candy",
+      "itemGroup.tabbeans": "Beans",
+      "item.valleymansbeans_blackteaandsoysauce.name": "Valleymans beans - Black tea and soy sauce",
+      "item.valleymansbeans_st_patricks_day.name": "Valleymans beans - St Patrick\u0027s Day",
+      "effect.valleyman_beans_poition": "Valleyman beans potion",
+      "item.valleymansbeanssoutherndelightoriginal.name": "Valleymans beans southern delight original",
+      "item.valleymansbeansstrawberryandchocolate.name": "Valleymans beans strawberry and chocolate",
+      "item.valleymansbeansdreamfish.name": "Valleymans beans dreamfish",
+      "item.valleymansbeanssmartiiesandskeettles.name": "Valleymans beans smartiies \u0026 skeettles",
+      "item.valleymansbeansappleandtangerine.name": "Valleymans beans apple and tangerine",
+      "item.valleymansbeansbanana.name": "Valleymans beans banana",
+      "item.valleymansbeanssourgummyworms.name": "Valleymans beans sour gummy worms",
+      "item.valleymansbeansexoticmeats.name": "Valleymans beans exotic meats",
+      "advancements.whyjustwhy.title": "WHY JUST WHY",
+      "item.valleymansbeansraspberry.name": "Valleymans beans raspberry",
+      "item.valleymansbeanspremium.name": "Valleymans beans premium",
+      "item.valleymansbeansmilkdurian.name": "Valleymans beans milk durian",
+      "item.valleymansbeansseasonedcheese.name": "Valleymans beans seasoned cheese"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "valleyman_beans",
+    "modName": "valleyman beans",
+    "version": "1.10.0",
+    "description": "beans",
+    "author": "Floi",
+    "websiteURL": "https://www.curseforge.com/minecraft/search?page\u003d1\u0026pageSize\u003d20\u0026sortType\u003d1\u0026class\u003dmc-mods",
+    "license": "Apache License version 2.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "untitled_design_73a",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.12.2",
+    "credits": "floi",
+    "modElementsPackage": "net.mcreator.valleymanbeans",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

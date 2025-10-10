@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "bea_25",
+    "customModelName": "Normal",
+    "name": "Valleymans beans strawberry and chocolate",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Valleymans beans strawberry and chocolate"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Beans"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 10,
+    "saturation": 1.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "ValleymansbeansstrawberryandchocolateFoodEaten"
+    }
+  }
+}

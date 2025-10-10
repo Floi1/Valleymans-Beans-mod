@@ -1,0 +1,31 @@
+{
+  "group": "valleyman_beans",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "valleyman_beans:beanswip"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    }
+  ],
+  "result": {
+    "item": "valleyman_beans:valleymansbeansswampgumbo",
+    "count": 1
+  }
+}

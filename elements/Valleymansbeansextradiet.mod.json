@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "untitled_design_57",
+    "customModelName": "Normal",
+    "name": "Valleymans beans extra diet",
+    "rarity": "EPIC",
+    "specialInfo": [
+      "Valleymans beans extra diet"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Beans"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "ValleymansbeansextradietFoodEaten"
+    }
+  }
+}

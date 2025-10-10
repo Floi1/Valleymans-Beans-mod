@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "untitled_design_-_2023-10-22t212632.325",
+    "customModelName": "Normal",
+    "name": "Valleymans beans banana",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Valleymans beans banana"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Beans"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 40,
+    "saturation": 6.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "ValleymansbeansbananaFoodEaten"
+    }
+  }
+}

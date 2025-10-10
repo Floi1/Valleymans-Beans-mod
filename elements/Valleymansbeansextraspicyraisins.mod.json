@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "untitled_design_-_2023-10-23t201230.675",
+    "customModelName": "Normal",
+    "name": "Valleymans beans extra spicy raisins",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Valleymans beans extra spicy raisins"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Beans"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 1,
+    "saturation": -0.1,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "ValleymansbeansextraspicyraisinsFoodEaten"
+    }
+  }
+}

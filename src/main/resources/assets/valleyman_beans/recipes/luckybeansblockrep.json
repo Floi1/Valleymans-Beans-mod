@@ -2,18 +2,12 @@
   "group": "valleyman_beans",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
+    " 1 ",
     "345",
-    "678"
+    " 7 "
   ],
   "key": {
-    "0": {
-      "item": "valleyman_beans:beanswip"
-    },
     "1": {
-      "item": "valleyman_beans:beanswip"
-    },
-    "2": {
       "item": "valleyman_beans:beanswip"
     },
     "3": {
@@ -25,13 +19,7 @@
     "5": {
       "item": "valleyman_beans:beanswip"
     },
-    "6": {
-      "item": "valleyman_beans:beanswip"
-    },
     "7": {
-      "item": "valleyman_beans:beanswip"
-    },
-    "8": {
       "item": "valleyman_beans:beanswip"
     }
   },

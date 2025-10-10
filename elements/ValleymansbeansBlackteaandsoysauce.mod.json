@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "untitled_design_72",
+    "customModelName": "Normal",
+    "name": "Valleymans beans - Black tea and soy sauce",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Valleymans beans - Black tea and soy sauce"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Beans"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 100,
+    "saturation": 50.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "ValleymansbeansBlackteaandsoysauceFoodEaten"
+    }
+  }
+}

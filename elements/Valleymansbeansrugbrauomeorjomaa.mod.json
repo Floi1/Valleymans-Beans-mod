@@ -1,0 +1,34 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "bea_28",
+    "customModelName": "Normal",
+    "name": "Valleymans beans rúgbrauð með rjóma á (dont eat this near your base)",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Valleymans beans rúgbrauð með rjóma á (dont eat this near your base)"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Beans"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 8,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "ValleymansbeansrugbrauomeorjomaaFoodEaten"
+    },
+    "onCrafted": {
+      "name": "ValleymansbeansrugbrauomeorjomaaItemIsCraftedsmelted"
+    }
+  }
+}

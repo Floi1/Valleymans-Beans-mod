@@ -8,22 +8,18 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
-import net.minecraft.world.World;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
-import net.mcreator.valleymanbeans.procedure.ProcedureBeansswordRightClickedInAir;
 import net.mcreator.valleymanbeans.ElementsValleymanBeansMod;
 
 import java.util.Set;
-import java.util.Map;
 import java.util.HashMap;
 
 import com.google.common.collect.Multimap;
@@ -38,7 +34,7 @@ public class ItemBeanssword extends ElementsValleymanBeansMod.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("BEANSSWORD", 4, 10000, 20f, 28f, 30)) {
+		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("BEANSSWORD", 4, 10000, 20f, 2f, 30)) {
 			@Override
 			public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot slot) {
 				Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);
@@ -55,20 +51,6 @@ public class ItemBeanssword extends ElementsValleymanBeansMod.ModElement {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
 				ret.put("sword", 4);
 				return ret.keySet();
-			}
-
-			@Override
-			public void onCreated(ItemStack itemstack, World world, EntityPlayer entity) {
-				super.onCreated(itemstack, world, entity);
-				int x = (int) entity.posX;
-				int y = (int) entity.posY;
-				int z = (int) entity.posZ;
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("itemstack", itemstack);
-					ProcedureBeansswordRightClickedInAir.executeProcedure($_dependencies);
-				}
 			}
 
 			@Override

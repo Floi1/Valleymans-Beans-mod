@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "tab",
+  "definition": {
+    "name": "Beans",
+    "icon": {
+      "value": "CUSTOM:Beanswip"
+    },
+    "showSearch": false
+  }
+}

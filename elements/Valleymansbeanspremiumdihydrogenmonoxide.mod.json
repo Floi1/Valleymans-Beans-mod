@@ -1,0 +1,34 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "untitled_design_65",
+    "customModelName": "Normal",
+    "name": "Valleymans beans premium dihydrogen monoxide",
+    "rarity": "EPIC",
+    "specialInfo": [
+      "Valleymans beans premium dihydrogen monoxide"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Beans"
+    },
+    "stackSize": 64,
+    "nutritionalValue": -20,
+    "saturation": -20.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "ValleymansbeanspremiumdihydrogenmonoxideFoodEaten"
+    },
+    "onEntitySwing": {
+      "name": "ValleymansbeanspremiumdihydrogenmonoxideEntitySwingsItem"
+    }
+  }
+}

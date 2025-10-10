@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "vanbeans23",
+    "customModelName": "Normal",
+    "name": "Valleymans bean Christmas 2023",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Valleymans bean Christmas 2023"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Beans"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 10,
+    "saturation": 2.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "ValleymansbeanChristmas2023FoodEaten"
+    }
+  }
+}

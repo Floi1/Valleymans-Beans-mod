@@ -1,0 +1,27 @@
+{
+  "group": "valleyman_beans",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:dye",
+      "data": 3
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "valleyman_beans:beanswip"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 3
+    }
+  ],
+  "result": {
+    "item": "valleyman_beans:valleymansbeansmashedpotatoandchocolate",
+    "count": 1
+  }
+}
